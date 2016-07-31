@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Pathway Gothic One');
+
+body {
+	background: #d3d3d3 ;
+}
+#maintitle{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header{
+    padding-top: 5px;
+    text-align: center;
+    height: 160px;
+	background-image: url("Images/grass.jpg");
+	font-family: Pathway Gothic One;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.text{
+    margin-top: 5px;
+    font-family: Pathway Gothic One;
+    font-size: 30px;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    text-decoration: bold;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.navigation{
+    margin-top: 0px;
+    font-family: Pathway Gothic One;
+}
+
+.pagetitles{
+    font-family: Pathway Gothic One;
+    text-align: left;
+    margin-top: 50px; 
+    text-align: center;
+    margin-left: 50px;
+    font-size: 40px;
+
+}
+#bottomnavbar{
+    margin-top: 50px;
+}
