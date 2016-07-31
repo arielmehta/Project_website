@@ -1,7 +1,13 @@
 <! DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    	<script type="text/javascript" src="js/tabletop.js"></script>
+    	<script type="text/javascript" src='js/sheetsee.js'></script>
+    	<link rel="stylesheet" type="text/css" href="css/sss.css">
 		<title> Zika Project 2016-2017 </title>
+
 		<link rel = "stylesheet" href= "Project_Zika_Styles.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="scriptsZP.js"></script>
@@ -11,8 +17,29 @@
         height: 400px;
       }
     </style>
+
 	</head>
 	<body>
+	 <div id="placeholder"></div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+ 	var gData
+ 	var URL = "https://docs.google.com/spreadsheets/d/1fKNxDtlT55fCW-t-vomljmYjYyXU_YVmoyI79eiw3Qw/pubhtml"
+ 	Tabletop.init( { key: URL, callback: callback, simpleSheet: true } )
+	})
+	function callback(data) {
+ // All the sheetsee things you want to do!
+     gData = data
+    var optionsJSON = ["placename", "photo-url"]
+    var template = "<ul><li><a href='{{photo-url}}' target='_blank'>"
+                 + "<img src='{{photo-url}}'></a></li>"
+                 + "<li><h4>{{placename}}</h4></li></ul>"
+    var geoJSON = Sheetsee.createGeoJSON(gData, optionsJSON)
+    var map = Sheetsee.loadMap("map")
+    Sheetsee.addTileLayer(map, 'jllord.n7aml2bc')
+    var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
+}
+</script>	 
 		<div class = "navigation"> <!-- first main header -->
 			<ul class = "navbar"> 
 				<li><a href = ""> Home </a></li>
