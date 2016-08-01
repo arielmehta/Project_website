@@ -1,30 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 @import url('https://fonts.googleapis.com/css?family=Pathway Gothic One');
 
-body {
-	background: #d3d3d3 ;
-}
-#maintitle{
-    text-align: center;
-    margin-top: 10px;
+
+.grass {
+    color: white;
+    font-family: Abel;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    clear: both;
+    background-size: cover;
+    z-index: -1;
+    margin: 0px;
+    border: 0px;
 }
 
-.header{
-    padding-top: 5px;
+.title {
     text-align: center;
-    height: 160px;
-	background-image: url("Images/grass.jpg");
-	font-family: Pathway Gothic One;
-    font-size: 30px;
-    margin-top: 0px;
+    font-size: 7vw;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(16vw) translateY(-29vw);
 }
 
-.text{
-    margin-top: 5px;
-    font-family: Pathway Gothic One;
-    font-size: 30px;
+.subtitle {
+    text-align: center;
+    font-size: 2.8vw;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(13vw) translateY(-18vw);
 }
+
+
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -41,7 +52,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 50px;
+    padding: 1vw 3.4vw;
     text-decoration: none;
     text-decoration: bold;
 }
@@ -52,11 +63,11 @@ li a:hover {
 }
 .navigation{
     margin-top: 0px;
-    font-family: Pathway Gothic One;
+    font-family: Abel;
 }
 
 .pagetitles{
-    font-family: Pathway Gothic One;
+    font-family: Abel;
     text-align: left;
     margin-top: 50px; 
     text-align: center;

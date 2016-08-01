@@ -1,0 +1,237 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    text-decoration: bold;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.navigation{
+    margin-top: 0px;
+    font-family: Abel;
+}
+
+#bottomnavbar{
+    margin-top: 50px;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Abel', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 7vw;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(36.75vw) translateY(-29.5vw);
+}
+
+.grass {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    clear: both;
+    background-size: cover;
+    z-index: -1;
+    margin: 0px;
+    border: 0px;
+}
+
+.headers {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+}
+
+#VCScontainer {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 10vw;
+    padding-top: 5vw;
+    vertical-align: middle;
+}
+
+#Vector {
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 0;
+}
+
+#Alameda {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 0;
+}
+
+#VCSparagraph {
+    width: 50%;
+    transform: translate(50%);
+    font-size: 1.5vw;
+}
+
+#VCbutton {
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border: none;
+    color: black;
+    padding: 1vw;
+    background-color: #a9e0cb;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1vw;
+    transform: translateX(9vw) translateY(2vw);
+}
+
+#VCbutton:hover {
+    background-color:#7ad0af;
+}
+
+#MSNcontainer {
+    background: #c6ece8;
+    width: 100%;
+    height: 47vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    border: 0;
+}
+
+#MSNcontainer1 {
+    width: 50%;
+    transform: translateY(30%);
+    vertical-align: middle;
+}
+
+#MSN {
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 0;
+}
+
+#Fremont {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 0;
+}
+
+#MSNparagraph {
+    width: 70%;
+    transform: translate(25%);
+    font-size: 1.5vw;
+}
+
+#MSNbutton {
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border: none;
+    color: black;
+    padding: 1vw;
+    transform: translateX(12vw) translateY(1vw);
+    background-color: #9cded7;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1vw;
+}
+
+#MSNbutton:hover {
+    background-color: #63cbc0;
+}
+
+#Bluefordcontainer {
+    background-color: #9cded7;
+    width: 35%;
+    height: 57vw;
+    transform: translate(160%) translateY(-57vw);
+}
+
+#bluefordpic {
+    width: 15vw;
+    height: 15vw;
+    transform: translateY(5vw) translateX(9.3vw);
+}
+
+#bluefordcaption {
+    text-align: center;
+    transform: translateY(4vw);
+    font-size: 1.7vw;
+}
+
+#blueforddescription {
+    text-align: left;
+    width: 80%;
+    transform: translateY(15%) translateX(15%);
+    font-size: 1.3vw;
+}
+
+#teamcontainer {
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    border: 0;
+    transform: translateY(-57vw);
+}
+
+#teamheading {
+    text-align: center;
+    font-size: 3vw;
+}
+
+table {
+    width: 80%;
+    transform: translate(10%);
+}
+
+#name {
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+#school {
+    font-size: 1vw;
+    margin: 0;
+    font-style: normal;
+}
+
+#phoebepic {
+    width: 10vw;
+    height: 10vw;
+}
+
+#contactcontainer {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 10vw;
+    padding-top: 5vw;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#contactheading {
+    font-size: 3vw;
+}

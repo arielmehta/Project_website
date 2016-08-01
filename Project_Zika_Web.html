@@ -3,8 +3,6 @@
 	<head>
 		<meta charset="utf-8">
     	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    	<script type="text/javascript" src="js/tabletop.js"></script>
-    	<script type="text/javascript" src='js/sheetsee.js'></script>
     	<link rel="stylesheet" type="text/css" href="css/sss.css">
 		<title> Zika Project 2016-2017 </title>
 
@@ -20,41 +18,22 @@
 
 	</head>
 	<body>
-	 <div id="placeholder"></div>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
- 	var gData
- 	var URL = "https://docs.google.com/spreadsheets/d/1fKNxDtlT55fCW-t-vomljmYjYyXU_YVmoyI79eiw3Qw/pubhtml"
- 	Tabletop.init( { key: URL, callback: callback, simpleSheet: true } )
-	})
-	function callback(data) {
- // All the sheetsee things you want to do!
-     gData = data
-    var optionsJSON = ["placename", "photo-url"]
-    var template = "<ul><li><a href='{{photo-url}}' target='_blank'>"
-                 + "<img src='{{photo-url}}'></a></li>"
-                 + "<li><h4>{{placename}}</h4></li></ul>"
-    var geoJSON = Sheetsee.createGeoJSON(gData, optionsJSON)
-    var map = Sheetsee.loadMap("map")
-    Sheetsee.addTileLayer(map, 'jllord.n7aml2bc')
-    var markerLayer = Sheetsee.addMarkerLayer(geoJSON, map, template)
-}
-</script>	 
 		<div class = "navigation"> <!-- first main header -->
 			<ul class = "navbar"> 
 				<li><a href = ""> Home </a></li>
-				<li><a href = ""> Math Science Nucleus </a></li>
+				<li><a href = "https://www.msnucleus.org/"> Math Science Nucleus </a></li>
 				<li><a href = ""> Our Data </a></li>
 				<li><a href = ""> Graphs/Analysis </a></li>
 				<li><a href = ""> Posts and Updates </a></li>
 				<li><a href = ""> Photos </a></li>
-				<li><a href = ""> About Us</a></li>
+				<li><a href = "AboutUs.html"> About Us</a></li>
 			</ul>
 		</div>
-		<div class = "header"> <!-- second main section title -->
-			<h1 id= "maintitle"> Zika Project 2016-2017 </h1>
-			<div class = "text"><h3 style = "text-align: center"> Math Science Nucleus, Alameda Vector Control Agency, WHS Biology Club </h3></div>
-		</div>
+         <div class="grass">
+          <img src="Images/grass.jpg" class="grass"/>
+             <h1 class="title"> Zika Project 2016-2017 </h1>
+             <h3 class="subtitle"> Math Science Nucleus, Alameda Vector Control, WHS Biology Club </h3>
+             </div> 
 
 		<div class = "section_3"> <!-- third main section image slideshow-->
 			<h2 class= "pagetitles"> Trapping Sites Map </h2>
@@ -68,7 +47,7 @@
     <script>
     var trap_locations = [{lat: 37.569957, lng: -121.954435}, {lat:37.551280, lng: -121.971380}, {lat: 37.546347 , lng: -121.965937}, {lat: 37.543335, lng: -121.986439 }]
     var titles = ["Example_1", "Example_2", "Example_3", "Example_4"]
-    var list = [0,1,2,3]
+    // var list = [0,1,2,3]
     </script>
     <script>
         function initMap() {
