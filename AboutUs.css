@@ -12,9 +12,10 @@ li a {
 
 li a {
     display: block;
+    font-size: 1.4vw;
     color: white;
     text-align: center;
-    padding: 14px 50px;
+    padding: 1vw 3.5vw;
     text-decoration: none;
     text-decoration: bold;
 }
