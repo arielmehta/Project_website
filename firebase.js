@@ -1,5 +1,4 @@
   // Initialize Firebase
-
 var config = {
 	apiKey: "AIzaSyAShrzKJOhDWwNDGy8_CxEm-0Jj7hZE2kM",
 	authDomain: "zika-project-f48f8.firebaseapp.com",
@@ -15,13 +14,14 @@ var ref = new Firebase("https://zika-project-f48f8.firebaseio.com/");
 // var trap_type = document.getElementById('trap_type').value; //User Input
 
 // window.onload= function(){
-	if(document.getElementById('button')){
+// calling the function to push data
+	if(document.getElementById('button')){ 
 		document.getElementById('button').addEventListener("click", writeUserData('trap_type').value);
 	}
 	
 // }
 
-// writeUserData('trap_type').value;
+// function to push data from form onto firebase
 
 function writeUserData(trap_type) {
 	console.log("push started");
