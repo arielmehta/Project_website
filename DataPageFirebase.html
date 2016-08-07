@@ -27,8 +27,20 @@
 
 <form id="Trap_Collection_Form">
 	Enter Trap Type: <input type="text" id="trap_type"/><br>
+	Enter Date Set: <input type="text" id="Date_Set"/><br>
+	Enter Position Type: <input type="text" id="Position_Type"/><br>
+	Enter Trap Latitude: <input type="text" id="Trap_Latitude"/><br>
+	Enter Trap Longitude: <input type="text" id="Trap_Longitude"/><br>
+	Enter Weather Data: <input type="text" id="Weather_Data"/><br>
+	Enter Humidity: <input type="text" id="Humidity"/><br>
+	Enter Average Rainfall: <input type="text" id="Average_Rainfall"/><br>
+	Enter Number of Eggs Total: <input type="text" id="Number_Eggs_Total"/><br>
+	Enter Number of Egg Rafts: <input type="text" id="Number_Egg_Rafts"/><br>
+	Enter Number of Individual Eggs: <input type="text" id="Number_Individual_Eggs"/><br>
+	Enter Egg Species: <input type="text" id="Egg_Species"/><br>
 
-	<input id="saveForm" name="saveForm" type="submit" value="Click Me">
+
+	<button id = "button"; onclick="writeUserdata('trap_type, Date_Set, Position_Type, Trap_Latitude, Trap_Longitude, Weather_Data, Humidity, Average_Rainfall, Number_Eggs_Total, Number_Egg_Rafts, Number_Individual_Eggs, Egg_Species')">Submit New Data</button>
 
 	<!-- onclick="writeUserdata('trap_type').value" -->
 

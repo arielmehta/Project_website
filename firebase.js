@@ -12,26 +12,45 @@ var config = {
 firebase.initializeApp(config);
 var ref = new Firebase("https://zika-project-f48f8.firebaseio.com/");
 
-// var trap_type = document.getElementById('trap_type').value; //User Input
-
-// window.onload= function(){
-	if(document.getElementById('button')){
-		document.getElementById('button').addEventListener("click", writeUserData('trap_type').value);
+ window.onload= function(){
+ 	document.getElementById('button').addEventListener("click", writeUserData('trap_type').value);
 	}
-	
-// }
 
-// writeUserData('trap_type').value;
 
-function writeUserData(trap_type) {
-	console.log("push started");
-	ref.push(document.getElementById('trap_type').value);
-    console.log("database updated");
+
+function writeUserData(trap_type, Date_Set, Position_Type, Trap_Latitude, Trap_Longitude, Weather_Data, Humidity, Average_Rainfall, Number_Eggs_Total, Number_Egg_Rafts, Number_Individual_Eggs, Egg_Species) {
+            console.log("push started");
+            firebase.database().ref('Trap_Collection_Form').push({
+            	trap_type: trap_type,
+            	Date_Set: Date_Set 
+            	Position_Type: Position_Type 
+            	Trap_Latitude: Trap_Latitude 
+            	Trap_Longitude: Trap_Longitude 
+            	Weather_Data: Weather_Data 
+            	Humidity: Humidity 
+            	Average_Rainfall: Average_Rainfall 
+            	Number_Eggs_Total: Number_Eggs_Total 
+            	Number_Egg_Rafts: Number_Egg_Rafts
+            	Number_Individual_Eggs: Number_Individual_Eggs 
+            	Egg_Species: Egg_Species
+            });
+            console.log("database updated");
         }
 
 
 
-
+var trap_type = document.getElementById('trap_type').value; //User Input
+var Date_Set = document.getElementById('Date_Set').value; //User Input
+var Position_Type = document.getElementById('Position_Type').value; //User Input
+var Trap_Latitude = document.getElementById('Trap_Latitude').value; //User Input
+var Trap_Longitude = document.getElementById('Trap_Longitude').value; //User Input
+var Weather_Data = document.getElementById('Weather_Data').value; //User Input
+var Humidity = document.getElementById('Humidity').value; //User Input
+var Average_Rainfall = document.getElementById('Average_Rainfall').value; //User Input
+var Number_Eggs_Total = document.getElementById('Number_Eggs_Total').value; //User Input
+var Number_Egg_Rafts = document.getElementById('Number_Egg_Rafts').value; //User Input
+var Number_Individual_Eggs = document.getElementById('Number_Individual_Eggs').value; //User Input
+var Egg_Species = document.getElementById('Egg_Species').value; //User Input
 
 
 // $(function(){
