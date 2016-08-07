@@ -23,16 +23,16 @@ function writeUserData(trap_type, Date_Set, Position_Type, Trap_Latitude, Trap_L
             console.log("push started");
             firebase.database().ref('Trap_Collection_Form').push({
             	trap_type: trap_type,
-            	Date_Set: Date_Set 
-            	Position_Type: Position_Type 
-            	Trap_Latitude: Trap_Latitude 
-            	Trap_Longitude: Trap_Longitude 
-            	Weather_Data: Weather_Data 
-            	Humidity: Humidity 
-            	Average_Rainfall: Average_Rainfall 
-            	Number_Eggs_Total: Number_Eggs_Total 
-            	Number_Egg_Rafts: Number_Egg_Rafts
-            	Number_Individual_Eggs: Number_Individual_Eggs 
+            	Date_Set: Date_Set, 
+            	Position_Type: Position_Type, 
+            	Trap_Latitude: Trap_Latitude, 
+            	Trap_Longitude: Trap_Longitude, 
+            	Weather_Data: Weather_Data, 
+            	Humidity: Humidity, 
+            	Average_Rainfall: Average_Rainfall, 
+            	Number_Eggs_Total: Number_Eggs_Total, 
+            	Number_Egg_Rafts: Number_Egg_Rafts,
+            	Number_Individual_Eggs: Number_Individual_Eggs, 
             	Egg_Species: Egg_Species
             });
             console.log("database updated");
