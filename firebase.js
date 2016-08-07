@@ -13,7 +13,7 @@ firebase.initializeApp(config);
 
 
  window.onload= function(){
- 	document.getElementById('button').addEventListener("click", writeUserData('trap_type').value);
+ 	document.getElementById('button').addEventListener("click", writeUserData('trap_type, Date_Set, Position_Type, Trap_Latitude, Trap_Longitude, Weather_Data, Humidity, Average_Rainfall, Number_Eggs_Total, Number_Egg_Rafts, Number_Individual_Eggs, Egg_Species').value);
  }
  	
 
