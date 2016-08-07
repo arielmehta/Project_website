@@ -1,5 +1,4 @@
   // Initialize Firebase
-
 var config = {
 	apiKey: "AIzaSyAShrzKJOhDWwNDGy8_CxEm-0Jj7hZE2kM",
 	authDomain: "zika-project-f48f8.firebaseapp.com",
@@ -10,13 +9,15 @@ var config = {
 
 
 firebase.initializeApp(config);
-var ref = new Firebase("https://zika-project-f48f8.firebaseio.com/");
+// var ref = new Firebase("https://zika-project-f48f8.firebaseio.com/");
+
 
  window.onload= function(){
  	document.getElementById('button').addEventListener("click", writeUserData('trap_type').value);
-	}
+ }
+ 	
 
-
+// function to push data from form onto firebase
 
 function writeUserData(trap_type, Date_Set, Position_Type, Trap_Latitude, Trap_Longitude, Weather_Data, Humidity, Average_Rainfall, Number_Eggs_Total, Number_Egg_Rafts, Number_Individual_Eggs, Egg_Species) {
             console.log("push started");
