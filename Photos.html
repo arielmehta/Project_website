@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <head>
+        <title>Photos</title>
+        <link rel="stylesheet" href="Photos.css">
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+        <!--Top navigation bar-->
+    <div class = "navigation"> <!-- first main header -->
+      <ul class = "navbar"> 
+        <li><a href = "Zika_index.html"> Home </a></li>
+        <li><a href = "https://www.msnucleus.org/"> Math Science Nucleus </a></li>
+        <li><a href = "DataPageFirebase"> Enter New Data </a></li>
+        <li><a href = "DisplayData.html"> Our Data </a></li>
+        <li><a href = "PostsandUpdates.html"> Posts and Updates </a></li>
+        <li><a href = "Photos.html"> Photos </a></li>
+        <li><a href = "AboutUs.html"> About Us</a></li>
+      </ul>
+    </div>
+        
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="Images/branches.jpg" id="slideshowpicture">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="Images/web.jpg" id="slideshowpicture">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="Images/rocks.jpg" id="slideshowpicture">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="Images/tree.jpg" id="slideshowpicture">
+        </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">
+        <img src="Images/leftarrow.png" id="arrow"/>
+    </a>
+    <a class="next" onclick="plusSlides(1)">
+        <img src="Images/rightarrow.png" id="arrow"/>
+    </a>
+        </div>
+        <br>
+        
+    <div id="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>  
+    </div>
+
+<!--End of slideshow HTML--> 
+<!-- JavaScript for slideshow -->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- End of JavaScript for slideshow -->
+
+<!--Bottom navigation bar -->
+<footer>
+    <div id = "bottomnavbar"; class= "navigation"> 
+        <ul class = "navbar">
+				<li><a href= ""> Contact us </a></li>
+				<li><a href = ""> WHS Biology Fb Page </a></li>
+        </ul>
+    </div>
+</footer>
+    </body>
+</html>
