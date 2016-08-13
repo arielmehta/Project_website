@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- JQuery CDN -->
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <meta charset="utf-8">
 <!-- Firebase links -->
 <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
@@ -13,18 +11,34 @@
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-storage.js"></script>
 
 <!-- firebase javaScipt File -->
-<script type="text/javascript" src="firebase.js"></script>
-
-
+<script type="text/javascript" src="mainfirebase.js"></script>
+<link rel = "stylesheet" href= "Project_Zika_Styles.css">
+<link rel = "stylesheet" href= "DataPageFirebase.css">
     
 </head>
 <body>
-<h1> Submit Trap Data</h1>
+<div class = "navigation"> <!-- first main header -->
+			<ul class = "navbar"> 
+				<li><a href = "Zika_index.html"> Home </a></li>
+				<li><a href = "https://www.msnucleus.org/"> Math Science Nucleus </a></li>
+				<li><a href = "DataPageFirebase.html"> Enter New Data </a></li>
+				<li><a href = "DisplayData.html"> Our Data </a></li>
+				<li><a href = "PostsandUpdates.html"> Posts and Updates </a></li>
+				<li><a href = "Photos.html"> Photos </a></li>
+				<li><a href = "AboutUs.html"> About Us</a></li>
+			</ul>
+		</div>
+         <div class="grass">
+          <img src="Images/grass.jpg" class="grass"/>
+             <h1 class="title" id= "title"> Enter New Data </h1>
+             </div> 
 
-<p>
-    <a href="DisplayData.html">All Data Here</a>
+
+<h1 id = "subtitle"> Submit Your Data </h1>
+<p id = "link">
+    <a href="DisplayData.html">Click For Current Data</a>
 </p>
-
+<div id = "formbox">
 <form id="Trap_Collection_Form" onsubmit = "writeUserData()">
 
 	Enter Trap Type: <input type="text" id="trap_type"/><br>
@@ -40,9 +54,10 @@
 	Enter Number of Individual Eggs: <input type="text" id="Number_Individual_Eggs"/><br>
 	Enter Egg Species: <input type="text" id="Egg_Species"/><br>
 
-	<input type="submit" value="Submit"/>
+	<input id = "subbut" type="submit" value="Submit"/>
 </form>
 
 
 </body>
+</div>
 </html>

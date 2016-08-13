@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Abel');
 @import url('https://fonts.googleapis.com/css?family=Pathway Gothic One');
 
@@ -46,6 +45,9 @@
 
 li a {
     float: left;
+}
+a{
+    text-decoration: none;
 }
 
 li a {
