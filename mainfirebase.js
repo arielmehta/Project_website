@@ -48,9 +48,18 @@ function writeUserData(){
 		egg_Species: Egg_Species
 		}); 
 }
+var urltest = "https://zika-project-f48f8.firebaseio.com/Trap_Collection_Form/KP4Z_NEy1x6RMw0ll33"
+
+var firebaseRefTest = new Firebase (urltest);
+
+var object1 = document.getElementById('object');
+
+const dbRefObject= firebase.database().ref().child('trap_type');
+
+dbRefObject.on("value", function(snap){
+	object1.innerText = snap.val();	
+});
 
 
-
-
-
-
+// }, function (errorObject) {
+  // console.log("The read failed: " + errorObject.code);
