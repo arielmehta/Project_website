@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Pathway Gothic One');
+
+.data-table{
+   font-family: Abel;
+   display: table;
+   width: 100vw;
+   margin-top: 1em;
+}
+
+
+}
+.header-container, .session-container{
+   display: table-row;
+   width: 100vw;
+}
+
+.header-date, .header-pos, .header-lat, .header-type,
+.header-long, .header-weath, .header-hum, .header-rain,
+.header-total, .header-raft, .header-egg, .header-spec,
+.one, .two, .three, .four,
+.five, .six, .seven, .eight,
+.nine, .ten, .eleven, .twelve{
+   display: table-cell;
+   border: 0.1vw solid;
+   border-collapse: collapse;
+   margin: 0px 0px 0px 0px;
+
+}
+.header-date, .header-pos, .header-lat, .header-type,
+.header-long, .header-weath, .header-hum, .header-rain,
+.header-total, .header-raft, .header-egg, .header-spec{
+   background-color: #c6ece8;  
+}
+
+
+.header-date, .header-pos, .header-lat, .header-type,
+.header-long, .header-weath, .header-hum, .header-rain,
+.header-total, .header-raft, .header-egg, .header-spec,
+.one, .two, .three, .four,
+.five, .six, .seven, .eight,
+.nine, .ten, .eleven, .twelve{
+   text-align: center;
+}
+.header-type, .one {
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-date, .two {
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-pos, .three{
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-lat, .four{
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-long, .five {
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-weath, .six {
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-hum, .seven{
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-rain, .eight{
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-total, .nine {
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;;
+}
+.header-raft, .ten {
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-egg, .eleven{
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+.header-spec, .twelve{
+   width: 8.3vw;
+   height: 7vw;
+   font-size: 2vw;
+}
+
