@@ -1,0 +1,61 @@
+body {
+    font-family: Abel, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 3vw;
+}
+
+#container {
+    margin: auto;
+}
+
+
+#dates {
+    font-size: 2vw;
+    padding: 3.5vw;
+}
+
+#dataentries {
+    font-size: 1.5vw;
+}
+
+#help {
+    font-size: 1.2vw;
+    width: 16vw;
+    margin: auto;
+}
+
+#postslink {
+    color: #66b7a9;
+}
+
+#postslink:hover {
+    font-weight: bold;
+}
+
+#rafts {
+    background-color: #ceeee2;
+    padding: 5vw;
+    text-align: center;
+}
+
+#eggs {
+    background-color: #cae7c4;
+    padding: 5vw;
+    text-align: center;
+}
+
+#total {
+    background-color: #c4e7d0;
+    padding: 5vw;
+    text-align: center;
+}
+
+#species {
+    background-color: #c6ece8;
+    padding: 5vw;
+    text-align: center;
+}
