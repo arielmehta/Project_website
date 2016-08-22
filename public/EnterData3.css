@@ -1,0 +1,109 @@
+body {
+    font-family: Abel;
+    font-size: 1.4vw;
+}
+
+h1 {
+    font-size: 2vw;
+    margin-top: 3vw;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[name="mod"] {
+    position: relative;
+    width: 9vw;
+    height: 9vw;
+    opacity: 0;
+}
+
+button {
+    width: 9vw;
+    height: 9vw;
+    position: absolute;    
+}
+
+#box {
+    text-align: center;
+    width: 13vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+#box:hover img{
+    opacity: 0.7;
+}
+
+table {
+    margin: auto;
+}
+
+img {
+    position: absolute;
+    width: 9.3vw;
+    height: 9.3vw;
+    opacity: 1;
+    z-index: -8;
+}
+
+#smallicons{
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    margin: 0;
+    z-index: -1;
+}
+
+#options {
+    position: relative;
+    font-size: 1.2vw;
+}
+
+input[name="options"] {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0;
+}
+
+input:checked ~ label{
+    font-weight: bold;
+}
+
+#smallbox {
+    margin-bottom: 0.8vw;
+    margin-left: 1.5vw;
+}
+
+#smallbox:hover img{
+    opacity: 0.7;
+}
+
+input[type=checkbox]:checked ~ label{
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+
+input[type=text] {
+    width: 70%;
+}
+
+#iconcredit {
+    font-size: 0.8vw;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: sticky;
+    overflow: hidden;
+}
+
+#nextbutton {
+    text-align: center;
+    background-color: white;
+}
