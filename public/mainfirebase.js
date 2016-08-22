@@ -14,6 +14,7 @@ var config = {
 	storageBucket: "zika-project-f48f8.appspot.com",
 	};
 
+
  window.onload= function(){
  	firebase.initializeApp(config);	
  };
@@ -89,6 +90,8 @@ firebaseRef.on('value', function(snapshot){
 	Trap_Collection_Form = snapshot.val();
 });
   
+
+
 
 
 
