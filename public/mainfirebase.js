@@ -51,7 +51,6 @@ function addmarkers(positionval, title, content){
 	  infowindow.open(map, marker);
 	});
 };
-
 function writeUserData(){
 	console.log("here");
 	var trap_type = document.getElementById('trap_type').value; //User Input

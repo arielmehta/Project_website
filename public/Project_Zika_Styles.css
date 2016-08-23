@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 @import url('https://fonts.googleapis.com/css?family=Pathway Gothic One');
 
+#map {
+    width: 50%;
+    height: 50vw;
+    margin-left: 25vw;
+    margin-bottom: 0vw;
+}
 
+#logo{
+    transform: translateY(-40vw) translateX(20vw);
+    width: 20vw;
+}
+.mapback{
+    background-color: #c6ece8;
+}
 .grass {
     color: white;
     font-family: Abel;
@@ -12,17 +25,17 @@
     clear: both;
     background-size: cover;
     z-index: -1;
-    margin: 0px;
+    margin-bottom: 0vw;
     border: 0px;
+    height: 37vw;
 }
 
 .title {
-    text-align: center;
     font-size: 7vw;
     color: white;
     position: absolute;
     z-index: 2;
-    transform: translateX(16vw) translateY(-29vw);
+    transform: translateX(45vw) translateY(-29vw);
 }
 
 .subtitle {
@@ -31,7 +44,17 @@
     color: white;
     position: absolute;
     z-index: 2;
-    transform: translateX(13vw) translateY(-18vw);
+    margin-top: 0vw;
+    margin-bottom:3vw;
+    transform: translateX(13vw) translateY(-12vw);
+}
+#secondline{
+    text-align: center;
+    font-size: 2.8vw;
+    color: white;
+    z-index: 2;
+    margin-top:2vw;
+    transform: translateX(0vw) translateY(-10vw);
 }
 
 
@@ -81,3 +104,38 @@ li a:hover {
 #bottomnavbar{
     margin-top: 50px;
 }
+
+
+
+.mission{
+    text-align: center;
+    font-family: Abel;
+    width: 20vw;
+    margin-left: 1.5vw;
+    font-size:1.7vw;
+}
+#titlemission{
+    font-style: bold;
+}
+.text_box{
+    padding-top: 1vw;
+    width: 23vw;
+    transform: translateY(-50vw);
+    height: 30vw;
+}
+#indexbutton {
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border: none;
+    color: black;
+    padding: 1vw;
+    background-color: #63cbc0;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1vw;
+    transform: translateX(2vw);
+}
+
+#indexbutton:hover {
+    background-color: white;

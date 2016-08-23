@@ -12,12 +12,6 @@
 <script type="text/javascript" src="mainfirebase.js"></script>
 
 		<title> Zika Project 2016-2017 </title>
-    <style>
-       #map {
-        width: 100%;
-        height: 400px;
-      }
-    </style>
 
 </head>
 	<body>
@@ -25,7 +19,7 @@
 			<ul class = "navbar"> 
 				<li><a href = "index.html"> Home </a></li>
 				<li><a href = "https://www.msnucleus.org/"> Math Science Nucleus </a></li>
-				<li><a href = "Log_In_Page.html"> Enter New Data </a></li>
+				<li><a href = "login.html"> Enter New Data </a></li>
 				<li><a href = "DisplayData.html"> Our Data </a></li>
 				<li><a href = "PostsandUpdates.html"> Posts and Updates </a></li>
 				<li><a href = "Photos.html"> Photos </a></li>
@@ -34,19 +28,26 @@
 		</div>
          <div class="grass">
           <img src="Images/grass.jpg" class="grass"/>
-             <h1 class="title"> Zika Project 2016-2017 </h1>
-             <h3 class="subtitle"> Math Science Nucleus, Alameda Vector Control, WHS Biology Club </h3>
+             <h1 class="title"> 2016-2017 </h1>
+             <h3 class="subtitle"> Math Science Nucleus, Alameda County Mosquito Abatement District</h3>
+             <h3 id = "secondline"> WHS Biology Club </h3>
+             <img src = "Images/logo.png" id= "logo"/>
              </div> 
-
 		<div class = "section_3"> <!-- third main section image slideshow-->
 			<h2 class= "pagetitles"> Trapping Sites Map </h2>
 		</div>
-
+<div class= "mapback">
     <div id='map'>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYc50_ic8qg2QphuOS0ZJsJH7I2qsKv8o&callback=initMap">
     </script>
     </div>
+</div>
+<div class = "text_box">
+	<p class = "mission" id= "titlemission">Our Mission</p>
+    <p class = "mission"> Our goal is to initiate a partnership between high school students and the Mosquito Abatement District to aid in the trapping, collecting, and identifying of vectors in our community. Along with setting up the traps, we have created this online database for members to submit their data, and have written software to analyze this data and display it in charts and tables and graphs. We aim not only to collect and analyze data, but also to tell a story with it. </p> 
+    <a id="indexbutton" href="AboutUs.html"> Learn More About Our Team </a>
+</div>
 
     		<div id = "bottomnavbar"; class= "navigation"> <!-- Last section footer-->
 				<ul class = "navbar">
