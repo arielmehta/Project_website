@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Enter Data</title>
+        <link rel="stylesheet" href="EnterData4.css">
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+        <!--
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        //-->
+        </script>
+        
+        <h1>Trap Location</h1>
+
+        <form>
+        <table>
+            <tr>
+                <td style="vertical-align: top">
+                <div id="box">
+                    <img src="Images/house.png" id="largeicons"/>
+                    <input type="radio" name="place" id="backyard" value="backyard"><br>
+                    <label for="backyard">Backyard</label>
+                </div>
+                </td>
+                <td style="vertical-align: top">
+                <div id="box">
+                    <img src="Images/elsewhere.png" id="largeicons"/>
+                    <input type="radio" name="place" id="elsewhere" value="elsewhere"><br>
+                    <label for="elsewhere">Somewhere Else</label>
+                </div>
+                </td>
+            </tr>    
+        </table>
+        <table id="minitable1">
+            <tr>
+                <th colspan="2">Trap is near...</th>
+            </tr>
+            <tr>
+                <td>
+                <div id="smallbox" style="text-align: center">
+                    <img src="Images/treeicon2.png" id="smallicons"/>
+                    <input type="checkbox" name="options" id="tree"><br>
+                    <label for="tree" id="optiontext">Plants</label>   
+                </div>
+                </td>
+                <td>
+                <div id="smallbox" style="text-align: center">
+                    <img src="Images/waves.png" id="smallicons"/>
+                    <input type="checkbox" name="options" id="water"><br>
+                    <label for="water" id="optiontext">Water</label>   
+                </div>
+                </td>
+            </tr> 
+        </table>
+        <table id="minitable2">
+            <tr>
+                <th colspan="2">Usual Conditions</th>
+            </tr>
+            <tr>
+                <td>
+                <div id="smallbox" style="text-align: center">
+                    <img src="Images/shade.png" id="smallicons"/>
+                    <input type="checkbox" name="options" id="shade"><br>
+                    <label for="shade" id="optiontext">Shady</label>   
+                </div>
+                </td>
+                <td>
+                <div id="smallbox" style="text-align: center">
+                    <img src="Images/sun.png" id="smallicons"/>
+                    <input type="checkbox" name="options" id="sunny"><br>
+                    <label for="sunny" id="optiontext">Sunny</label>   
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <div id="smallbox" style="text-align: center">
+                    <img src="Images/desert.png" id="smallicons"/>
+                    <input type="checkbox" name="options" id="desert"><br>
+                    <label for="desert" id="optiontext">Dry</label>   
+                </div>
+                </td>
+                <td>
+                <div id="smallbox" style="text-align: center">
+                    <img src="Images/water.png" id="smallicons"/>
+                    <input type="checkbox" name="options" id="wet"><br>
+                    <label for="wet" id="optiontext">Wet</label>   
+                </div>
+                </td>
+            </tr> 
+        </table>
+        <div id="nextbutton" style="margin: auto">
+            <input type="submit" value="Next" style="font-family: Abel, sans-serf; font-size: 1.2vw">
+        </div>
+        </form>
+    <div id="iconcredit">
+        <p>Icons from IconFinder designers: <a href="https://www.iconfinder.com/Zerg">Sergei Kokota</a>, <a href="http://www.elegantthemes.com/">Nick Roach</a>, <a href= "https://www.iconfinder.com/yanlu">Yannick Lung</a>, <a href="https://www.iconfinder.com/webalys">Webalys</a></p>
+    </div>
+    </body>
+</html>
