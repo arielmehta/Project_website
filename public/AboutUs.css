@@ -175,6 +175,7 @@ body {
     text-decoration: none;
     font-size: 1.5vw;
     border: none;
+    width: 23vw;
     color: black;
     padding: 1vw;
     transform: translateX(12vw) translateY(1vw);
@@ -185,7 +186,7 @@ body {
 }
 
 #MSNbutton:hover {
-    background-color: #63cbc0;
+    opacity: 0.7;
 }
 
 #Bluefordcontainer {
@@ -250,8 +251,8 @@ td {
 }
 
 #phoebepic {
-    width: 20vw;
-    height: 20vw;
+    width: 14vw;
+    height: 14vw;
     border-radius: 50%;
 }
 
