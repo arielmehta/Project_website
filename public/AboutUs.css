@@ -1,5 +1,22 @@
+html {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    border: 0;
+    left: 0;
+}
+
+div {
+    display: block;
+}
+
 .navbar {
     list-style-type: none;
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -8,9 +25,6 @@
 
 li a {
     float: left;
-}
-
-li a {
     display: block;
     font-size: 1.4vw;
     color: white;
@@ -21,33 +35,42 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
+
 li a:hover {
     background-color: #111;
 }
+
 .navigation{
-    margin-top: 0px;
+    position: absolute;
+    left: 0;
+    width: 100%;
     font-family: Abel;
+    z-index: 2;
 }
 
-#bottomnavbar{
-    margin-top: 50px;
+#topnav {
+    top: 0;
+}
+
+#bottomnavbar {
+    position: relative;
+    height: 3.7vw;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 body {
-    margin: 0px;
+    min-height: 100%;
+    height: 100%;
     font-family: 'Abel', sans-serif;
+    margin: 0;
 }
 
 .grass {
-    width: 100%;
     position: relative;
-    top: 0;
-    left: 0;
-    clear: both;
-    background-size: cover;
-    z-index: -1;
-    margin: 0px;
-    border: 0px;
+    width: 100%;
+    border: 0;
 }
 
 .title {
@@ -56,12 +79,10 @@ body {
     color: white;
     z-index: 2;
     vertical-align: middle;
-    
 }
 
 #titletext {
-    position: absolute;
-    z-index: -1;
+    position: relative;
     background-image: url(Images/grass.png);
     background-size: cover;
     width: 100%;
@@ -73,27 +94,24 @@ body {
 
 #realtitletext {
     vertical-align: middle;
-    transform: translateX(50%);
-    display: table-cell;
     width: 100%;
-    height: 28vw;
+    margin: auto;
+    position: relative;
+    padding-top: 4vw;
+    height: 26vw;
 }
 
 .headers {
     position: relative;
-    top: 100%;
-    left: 50%;
     width: 100%;
-    transform: translate(-50%);
 }
 
 #VCScontainer {
     background-color: white;
     position: relative;
-    margin-top: 30vw;
     width: 100%;
-    padding-bottom: 10vw;
-    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-top: 1vw;
     vertical-align: middle;
 }
 
@@ -101,6 +119,7 @@ body {
     text-align: center;
     font-size: 3vw;
     margin-bottom: 1vw;
+    margin-top: 4vw;
 }
 
 #Alameda {
@@ -131,6 +150,7 @@ body {
     text-align: center;
     display: inline-block;
     border-radius: 1vw;
+    z-index: 3;
 }
 
 #VCbutton:hover {
@@ -138,11 +158,11 @@ body {
 }
 
 #MSNcontainer {
+    display: table;
+    position: relative;
     background: #c6ece8;
     width: 100%;
     height: 47vw;
-    padding-bottom: 5vw;
-    padding-top: 5vw;
     border: 0;
 }
 
@@ -150,6 +170,7 @@ body {
     width: 50%;
     transform: translateY(30%);
     vertical-align: middle;
+    position: absolute;
 }
 
 #MSN {
@@ -190,10 +211,13 @@ body {
 }
 
 #Bluefordcontainer {
+    display: table-cell;
     background-color: #9cded7;
     width: 35%;
-    height: 57vw;
-    transform: translate(160%) translateY(-57vw);
+    height: 53vw;
+    position: relative;
+    float: right;
+    margin-right: 9vw;
 }
 
 #bluefordpic {
@@ -216,16 +240,16 @@ body {
 }
 
 #teamcontainer {
+    float: left;
+    position: relative;
     background-color: transparent;
     width: 100%;
-    margin: 0;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    border: 0;
-    transform: translateY(-57vw);
+    clear: both;
+    margin-bottom: 6vw;
 }
 
 #teamheading {
+    margin-top: 6vw;
     text-align: center;
     font-size: 3vw;
 }
@@ -254,17 +278,4 @@ td {
     width: 14vw;
     height: 14vw;
     border-radius: 50%;
-}
-
-#contactcontainer {
-    background-color: white;
-    width: 100%;
-    padding-bottom: 10vw;
-    padding-top: 5vw;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#contactheading {
-    font-size: 3vw;
 }
