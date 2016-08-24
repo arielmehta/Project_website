@@ -10,11 +10,30 @@
     </head>
     
     <body>
+        
+        <script type="text/javascript">
+        <!--
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        //-->
+        </script>
+        
+        <div id="titletext">
+            <div id="realtitletext">
+            <h1 class="title">Posts and Updates</h1>
+            </div>
+        </div>
+        
         <!--Top navigation bar-->
         <div class = "navigation"> <!-- first main header -->
             <ul class = "navbar"> 
                 <li><a href = "index.html"> Home </a></li>
-                <li><a href = "https://www.msnucleus.org/"> Math Science Nucleus </a></li>
+                <li><a href = "https://www.msnucleus.org/" target="_blank"> Math Science Nucleus </a></li>
                 <li><a href = "login.html"> Enter New Data </a></li>
                 <li><a href = "DisplayData.html"> Our Data </a></li>
                 <li><a href = "PostsandUpdates.html"> Posts and Updates </a></li>
@@ -23,10 +42,6 @@
             </ul>
         </div>
         <!--End of top navigation bar-->
-        <div class="grass">
-            <img src="Images/grass.png" class="grass"/>
-            <h1 class="title">Posts and Updates</h1>
-        </div>
 
         <table class="news">
             <colgroup>
@@ -67,6 +82,151 @@
                 </td>
                 <td class="newslink">
                     <a href="http://www.cnbc.com/2016/01/28/zika-epidemic-on-us-doorstep-spurs-vaccine-hunt.html" target="_blank" id="newslink">Zika epidemic on US doorstep spurs vaccine hunt (Jan 28, 2016)</a>
+                </td>
+            </tr>
+        </table>
+        
+        <form>
+        <table id="identification" style="width:80%">
+            <colgroup>
+                <col style="width: 33%"/>
+                <col style="width: 33%"/>
+                <col style="width: 33%"/>
+            </colgroup>
+            <tr>
+                <th colspan="3" id="idtitle">Identifying Mosquitoes and Eggs</th>
+            </tr>
+            <tr>
+                <td style="vertical-align: top">
+                    <div id="box" style="text-align: center">
+                    <div id="anophelestitle">Anopheles</div>
+                    <a href="#" onclick="toggle_visibility('anophelesdescription');">
+                    <input type="checkbox" name="genus" id="anopheles"><br>
+                    </a>
+                    </div>
+                </td>
+                <td style="vertical-align: top">
+                    <div id="box" style="text-align: center">
+                    <div id="aedestitle">Aedes</div>
+                    <a href="#" onclick="toggle_visibility('aedesdescription');">
+                    <input type="checkbox" name="genus" id="anopheles"><br>
+                    </a>
+                    </div>
+                </td>
+                <td style="vertical-align: top">
+                    <div id="box" style="text-align: center">
+                    <div id="culextitle">Culex</div>
+                    <a href="#" onclick="toggle_visibility('culexdescription');">
+                    <input type="checkbox" name="genus" id="culex"><br>
+                    </a>
+                    </div>                   
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top">
+                    <div id="anophelesdescription" style="display: none">
+                        <div id="minibox" style="text-align: center">
+                        <div id="anopheleseggtitle">Eggs</div>
+                        <a href="#" onclick="toggle_visibility('anopheleseggs');">
+                        <input type="radio" name="options"><br>
+                        </a>
+                        </div>
+                        <div id="anopheleseggs" style="display: none">
+                            <img src="Images/anopheleseggs.jpg" id="eggpicture"/>
+                            <p id="iddescription">Anopheles mosquitoes lay more than a hundred eggs at a time. Eggs are separate but will sometimes drift together.</p>
+                        </div>
+                        <div id="minibox" style="text-align: center">
+                        <div id="anophelesadulttitle">Adult</div>
+                        <a href="#" onclick="toggle_visibility('anophelesadult');">
+                        <input type="radio" name="options"><br>
+                        </a>
+                        </div>
+                        <div id="anophelesadult" style="display: none">
+                            <img src="Images/anophelesadult.png" id="adultpicture"/>
+                        </div>
+                    </div>
+                </td>
+                <td style="vertical-align: top">
+                    <div id="aedesdescription" style="display: none">
+                        <div id="minibox" style="text-align: center">
+                        <div id="aedeseggtitle">Eggs</div>
+                        <a href="#" onclick="toggle_visibility('aedeseggs');">
+                        <input type="radio" name="options"><br>
+                        </a>
+                        </div>
+                        <div id="aedeseggs" style="display: none">
+                            <img src="Images/aedeseggs.jpg" id="eggpicture"/>
+                            <p id="iddescription">Aedes eggs look like black grains of rice. These eggs can survive through cold temperatures and hatch when conditions are right.</p>
+                        </div>
+                        <div id="minibox" style="text-align: center">
+                        <div id="aedesadulttitle">Adult</div>
+                        <a href="#" onclick="toggle_visibility('aedesadult');">
+                        <input type="radio" name="options"><br>
+                        </a>
+                        </div>
+                        <div id="aedesadult" style="display: none">
+                            <img src="Images/aedesadult.PNG" id="adultpicture1"/>
+                        </div>
+                    </div>
+                </td>
+                <td style="vertical-align: top">
+                    <div id="culexdescription" style="display: none">
+                        <div id="minibox" style="text-align: center">
+                        <div id="culexeggtitle">Eggs</div>
+                        <a href="#" onclick="toggle_visibility('culexeggs');">
+                        <input type="radio" name="options"><br>
+                        </a>
+                        </div>
+                        <div id="culexeggs" style="display: none">
+                            <img src="Images/culexeggs.jpg" id="eggpicture"/>
+                            <p id="iddescription">Culex mosquitoes lay hundreds of eggs at a time. Eggs are connected to form a raft, which floats on the surface of still water.</p>
+                        </div>
+                        <div id="minibox" style="text-align: center">
+                        <div id="culexadulttitle">Adult</div>
+                        <a href="#" onclick="toggle_visibility('culexadult');">
+                        <input type="radio" name="options"><br>
+                        </a>
+                        </div>
+                        <div id="culexadult" style="display: none">
+                            <img src="Images/culexadult.PNG" id="adultpicture1"/>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </form>
+        
+        <table id="count" style="width:80%">
+            <colgroup>
+                <col style="width: 33%"/>
+                <col style="width: 33%"/>
+                <col style="width: 33%"/>
+            </colgroup>
+            <th id="counttitle" colspan="3">How to Count Mosquito Eggs</th>
+            <tr>
+                <td style="vertical-align: top">
+                    <div id="minibox1">
+                        <h3 id=numbertitle>1</h3>
+                        <h2 id="numbersubtitle">Count Egg Rafts</h2>
+                        <img id="countpic" src="Images/eggraft.jpg"/>
+                        <p id="countdescription">In the above picture, the cluster of eggs counts as one egg raft. Note the number of egg rafts, then count the number of eggs that make up that raft.</p>
+                    </div>
+                </td>
+                <td style="vertical-align: top">
+                    <div id="minibox2">
+                        <h3 id=numbertitle>2</h3>
+                        <h2 id="numbersubtitle">Count Individual Eggs</h2>
+                        <img id="countpic" src="Images/egg.jpg"/>
+                        <p id="countdescription">Count the number of individual eggs- these are the eggs floating around by themselves.</p>
+                    </div>
+                </td>
+                <td style="vertical-align: top">
+                    <div id="minibox3">
+                        <h3 id=numbertitle>3</h3>
+                        <h2 id="numbersubtitle1">Calculate Total</h2>
+                        <img id="countpic1" src="Images/calculator.png"/>
+                        <p id="countdescription">Add up the number of eggs in the rafts with the number of individual eggs to obtain your total.</p>
+                    </div>
                 </td>
             </tr>
         </table>
@@ -214,7 +374,7 @@
         <img src="Images/leftarrow.png" id="arrow"/>
     </a>
     <a class="next" onclick="plusSlides(1)">
-        <img src="images/rightarrow.png" id="arrow"/>
+        <img src="Images/rightarrow.png" id="arrow"/>
     </a>
     <div id="dots">
       <span class="dot" onclick="currentSlide(1)"></span>

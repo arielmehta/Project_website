@@ -1,62 +1,86 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 @import url('https://fonts.googleapis.com/css?family=Pathway Gothic One');
 
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Abel, sans-serif !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 #map {
     width: 50%;
     height: 50vw;
-    margin-left: 25vw;
-    margin-bottom: 0vw;
-}
-
-#logo{
-    transform: translateY(-40vw) translateX(20vw);
-    width: 20vw;
-}
-.mapback{
-    background-color: #c6ece8;
-}
-.grass {
-    color: white;
-    font-family: Abel;
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    clear: both;
-    background-size: cover;
-    z-index: -1;
-    margin-bottom: 0vw;
-    border: 0px;
-    height: 37vw;
+    margin: auto;
+    margin-top: 0;
 }
 
 .title {
+    text-align: left;
     font-size: 7vw;
     color: white;
-    position: absolute;
     z-index: 2;
-    transform: translateX(45vw) translateY(-29vw);
+    margin-top: 0;
+    position: absolute;
+    margin-left: 42vw;
+}
+
+#logo{
+    width: 20vw;
+    vertical-align: middle;
+    margin-top: 1vw;
+    margin-left: 20vw;
+    opacity: 0.85;
+    position: relative;
+    float: left;
+}
+
+#titletext {
+    position: absolute;
+    z-index: -1;
+    background-image: url(Images/grass.png);
+    background-size: cover;
+    width: 100%;
+    height: 30vw;
+    opacity: 1;
+    font-weight: 900;
+    font-family: 'Abel', sans-serif;
+}
+
+#realtitletext {
+    vertical-align: middle;
+    width: 100%;
+    display: table-cell;
+    height: 30vw;
 }
 
 .subtitle {
-    text-align: center;
-    font-size: 2.8vw;
-    color: white;
+    width: 30%;
     position: absolute;
-    z-index: 2;
-    margin-top: 0vw;
-    margin-bottom:3vw;
-    transform: translateX(13vw) translateY(-12vw);
-}
-#secondline{
-    text-align: center;
-    font-size: 2.8vw;
+    margin-left: 42vw;
+    margin-top: 8.3vw;
+    text-align: left;
+    font-size: 1.3vw;
     color: white;
     z-index: 2;
-    margin-top:2vw;
-    transform: translateX(0vw) translateY(-10vw);
+
 }
 
+#secondline {
+    position: absolute;
+    text-align: left;
+    margin-left: 42vw;
+    margin-top: 10vw;
+    font-size: 2.3vw;
+    color: white;
+    z-index: 2;
+}
 
 .navbar {
     list-style-type: none;
@@ -69,7 +93,8 @@
 li a {
     float: left;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -89,40 +114,58 @@ li a:hover {
 }
 .navigation{
     margin-top: 0px;
-    font-family: Abel;
+    font-family: 'Abel';
 }
 
 .pagetitles{
-    font-family: Abel;
+    font-family: 'Abel';
     text-align: left;
     margin-top: 3vw; 
     text-align: center;
     margin-left: 0;
+    margin-bottom: 1vw;
     font-size: 5vw;
-
 }
+
 #bottomnavbar{
     margin-top: 50px;
 }
 
-
-
-.mission{
-    text-align: center;
-    font-family: Abel;
-    width: 20vw;
-    margin-left: 1.5vw;
-    font-size:1.7vw;
+img, div {
+    display: block;
 }
-#titlemission{
-    font-style: bold;
-}
-.text_box{
-    padding-top: 1vw;
-    width: 23vw;
-    transform: translateY(-50vw);
+
+#bigbox {
     height: 30vw;
+    width: 100%;
+    position: relative;
+    top: 0;
 }
+
+#mission{
+    text-align: center;
+    font-family: 'Abel';
+    width: 100%;
+    clear: both;
+}
+
+#missiontext {
+    width: 60%;
+    margin: auto;
+    font-size: 2vw;
+}
+
+.text_box{
+    margin-top: 4vw;
+    padding: 1vw;
+    background-color: #d0ece7;
+}
+
+#buttonbox {
+    width: 100%;
+    text-align: center;
+}
+
 #indexbutton {
     font-family: 'Abel', sans-serif;
     text-decoration: none;
@@ -132,10 +175,25 @@ li a:hover {
     padding: 1vw;
     background-color: #63cbc0;
     text-align: center;
-    display: inline-block;
     border-radius: 1vw;
-    transform: translateX(2vw);
+    width: 19%;
+    display: inline-block;
+    margin: 3vw;
 }
 
 #indexbutton:hover {
-    background-color: white;
+    opacity: 0.6;
+}
+
+#video {
+    width: 56vw;
+    height: 31.5vw;
+}
+
+#videobox {
+    width: 56vw;
+    height: 31.5vw;
+    margin: auto;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+}
