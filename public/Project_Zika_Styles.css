@@ -8,6 +8,10 @@ html {
     font-family: Abel, sans-serif !important;
 }
 
+body {
+    margin: 0;
+}
+
 *,
 *:before,
 *:after {
