@@ -2,6 +2,15 @@
 <html>
     
     <head>
+    <meta charset="utf-8">
+
+    <!-- Firebase links -->
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script type="text/javascript" src="mainfirebase.js"></script>
         <title>Enter Data</title>
         <link rel="stylesheet" href="EnterData4.css">
         <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -22,7 +31,7 @@
         
         <h1>Trap Location</h1>
 
-        <form>
+        <form class = "Trap_Setup_Form3" onsubmit = "writeStartUserData3()" action = "success.html">
         <table>
             <tr>
                 <td style="vertical-align: top">
@@ -49,15 +58,27 @@
                 <td>
                 <div id="smallbox" style="text-align: center">
                     <img src="Images/treeicon2.png" id="smallicons"/>
+                    <a href="#" onclick="toggle_visibility('othertext');">
                     <input type="checkbox" name="options" id="tree"><br>
-                    <label for="tree" id="optiontext">Plants</label>   
+                    </a>
+                    <label for="tree" id="optiontext">Plants</label>  
+                    <div id="othertext" style = "display:none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "plantts" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div> 
                 </div>
                 </td>
                 <td>
                 <div id="smallbox" style="text-align: center">
                     <img src="Images/waves.png" id="smallicons"/>
+                    <a href="#" onclick="toggle_visibility('othertext1');">
                     <input type="checkbox" name="options" id="water"><br>
-                    <label for="water" id="optiontext">Water</label>   
+                    </a>
+                    <label for="water" id="optiontext">Water</label>
+                    <div id="othertext1" style = "display:none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "waters" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div>   
                 </div>
                 </td>
             </tr> 
@@ -70,15 +91,27 @@
                 <td>
                 <div id="smallbox" style="text-align: center">
                     <img src="Images/shade.png" id="smallicons"/>
+                    <a href="#" onclick="toggle_visibility('othertext2');">
                     <input type="checkbox" name="options" id="shade"><br>
-                    <label for="shade" id="optiontext">Shady</label>   
+                    </a>
+                    <label for="shade" id="optiontext">Shady</label>
+                    <div id="othertext2" style = "display:none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "shady" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div>   
                 </div>
                 </td>
                 <td>
                 <div id="smallbox" style="text-align: center">
                     <img src="Images/sun.png" id="smallicons"/>
+                    <a href="#" onclick="toggle_visibility('othertext3');">
                     <input type="checkbox" name="options" id="sunny"><br>
-                    <label for="sunny" id="optiontext">Sunny</label>   
+                    </a>
+                    <label for="sunny" id="optiontext">Sunny</label>
+                    <div id="othertext3" style = "display:none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "sunnyy" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div>   
                 </div>
                 </td>
             </tr>
@@ -86,15 +119,27 @@
                 <td>
                 <div id="smallbox" style="text-align: center">
                     <img src="Images/desert.png" id="smallicons"/>
+                    <a href="#" onclick="toggle_visibility('othertext4');">
                     <input type="checkbox" name="options" id="desert"><br>
-                    <label for="desert" id="optiontext">Dry</label>   
+                    </a>
+                    <label for="desert" id="optiontext">Dry</label>
+                    <div id="othertext4" style = "display:none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "dryy" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div>   
                 </div>
                 </td>
                 <td>
                 <div id="smallbox" style="text-align: center">
                     <img src="Images/water.png" id="smallicons"/>
+                    <a href="#" onclick="toggle_visibility('othertext5');">
                     <input type="checkbox" name="options" id="wet"><br>
-                    <label for="wet" id="optiontext">Wet</label>   
+                    </a>
+                    <label for="wet" id="optiontext">Wet</label> 
+                    <div id="othertext5" style = "display:none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "wett" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div>  
                 </div>
                 </td>
             </tr> 

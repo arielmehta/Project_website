@@ -13,7 +13,6 @@
 
 <script type="text/javascript" src="mainfirebase.js"></script>
 <link rel = "stylesheet" href= "Project_Zika_Styles.css">
-<link rel = "stylesheet" href= "DataPageFirebase.css">
 <link rel = "stylesheet" href= "datastyles.css">
 
 
@@ -25,59 +24,40 @@
 				<li><a href = "index.html"> Home </a>
 				<li><a href = "https://www.msnucleus.org/"> Math Science Nucleus </a></li>
 				<li><a href = "login.html"> Enter New Data </a></li>
-				<li><a href = "DisplayData.html"> Our Data </a></li>
+				<li><a href = "DisplayData.html"> Active Traps List </a></li>
 				<li><a href = "PostsandUpdates.html"> Posts and Updates </a></li>
-				<li><a href = "Photos.html"> Photos </a></li>
+				<li><a href = "DataAnalysis.html"> Data Analysis </a></li>
 				<li><a href = "AboutUs.html"> About Us</a></li>
 			</ul>
 		</div>
-         <div class="grass">
-          <img src="Images/grass.jpg" class="grass"/>
-             <h1 class="title" id= "title"> All Data </h1>
-             </div> 
-
-
-<h1 id = "subtitle"> Data 2016-2017 </h1>
+<h1 id = "subtitle"> Active Traps List </h1>
   <div id="data_table">
 
 
 <script>
-   var Trap_Collection_Form = {};
+var trap_number = 0;
+   var Trap_Setup_Form = {};
 
-   firebaseRef.on('value', function(snapshot) {
-       Trap_Collection_Form = snapshot.val();
+   firebaseRefa.on('value', function(snapshot) {
+       Trap_Setup_Form = snapshot.val();
        var session_data = "<div class=\"header-container\"> " +
-               "<div class=\"header-type\">Trap Type</div >" +
-               "<div class=\"header-date\">Date Trap Was Set</div>" +
-               "<div class=\"header-pos\">Position Type</div>" +
-               "<div class=\"header-lat\"> Latitude </div>" +
-               "<div class=\"header-long\"> Longitude </div >" +
-               "<div class=\"header-weath\"> Weather Data </div>" +
-               "<div class=\"header-hum\"> Humidity </div>" +
-               "<div class=\"header-rain\"> Average Rainfall </div>" +
-               "<div class=\"header-total\"> Number of Eggs Total </div >" +
-               "<div class=\"header-raft\"> Number of Egg Rafts </div>" +
-               "<div class=\"header-egg\"> Number of Individual Eggs</div>" +
-               "<div class=\"header-spec\"> Mosquito Species of Eggs Found</div>" +
+               "<div class=\"header-type\">Trap Number</div >" +
+               "<div class=\"header-date\">Initials</div>" +
+               "<div class=\"header-pos\">Latitude</div>" +
+               "<div class=\"header-lat\"> Longitude </div>" +
+               "<div class=\"header-weath\"> Start Date </div>" +
            "</div>";
 
 
-       for (var keys in Trap_Collection_Form){
+       for (var keys in Trap_Setup_Form){
+          trap_number = trap_number + 1;
            session_data = session_data + "<div class=\"session-container\">" +
-               "      <div id=\"type\" class=\"one\">" + Trap_Collection_Form[keys].Trap_type + "</div>" +
-               "      <div id=\"date\" class=\"two\">" + Trap_Collection_Form[keys].date_Set + " </div>" +
-               "      <div id=\"pos\" class=\"three\">"+Trap_Collection_Form[keys].position_Type +" </div>" +
-               "      <div id=\"lat\" class=\"four\"> " + Trap_Collection_Form[keys].trap_Latitude + "</div>" +
-               "      <div id=\"type\" class=\"five\">" + Trap_Collection_Form[keys].trap_Longitude + "</div>" +
-               "      <div id=\"date\" class=\"six\">" + Trap_Collection_Form[keys].weather_Data + " </div>" +
-               "      <div id=\"pos\" class=\"seven\">"+Trap_Collection_Form[keys].humidity +" </div>" +
-               "      <div id=\"lat\" class=\"eight\"> " + Trap_Collection_Form[keys].average_Rainfall + "</div>" +
-               "      <div id=\"type\" class=\"nine\">" + Trap_Collection_Form[keys].number_Eggs_Total + "</div>" +
-               "      <div id=\"date\" class=\"ten\">" + Trap_Collection_Form[keys].number_Egg_Rafts + " </div>" +
-               "      <div id=\"pos\" class=\"eleven\">"+Trap_Collection_Form[keys].number_Individual_Eggs +" </div>" +
-               "      <div id=\"lat\" class=\"twelve\"> " + Trap_Collection_Form[keys].egg_Species + "</div>" +
+               "      <div id=\"type\" class=\"one\">" + trap_number + "</div>" +
+               "      <div id=\"date\" class=\"two\">" + Trap_Setup_Form[keys].Initials + " </div>" +
+               "      <div id=\"pos\" class=\"three\">"+Trap_Setup_Form[keys].Latitude +" </div>" +
+               "      <div id=\"lat\" class=\"four\"> " + Trap_Setup_Form[keys].Longitude + "</div>" +
+               "      <div id=\"date\" class=\"six\">" + Trap_Setup_Form[keys].Start_Month + "/" + Trap_Setup_Form[keys].Start_Day + "/" + Trap_Setup_Form[keys].Start_Year + " </div>" +
                    "</div>";
-
        }
        document.getElementById("data_table").innerHTML = session_data;
 

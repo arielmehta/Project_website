@@ -2,6 +2,15 @@
 <html>
     
     <head>
+    <meta charset="utf-8">
+
+    <!-- Firebase links -->
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script type="text/javascript" src="mainfirebase.js"></script>
         <title>Enter Data</title>
         <link rel="stylesheet" href="EnterData3.css">
         <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -21,8 +30,15 @@
         </script>
         
         <h1>Trap Modifications</h1>
-        <form>
+        <h3 style = "font-family: Abel; font-size: 1.5vw; text-align: center; margin-top: 1vw">Click on the Icons For Drop-down Selection</h3>
+        <form class = "Trap_Setup_Form2" action = "EnterData4.html" onsubmit = "writeStartUserData2()">
+        <h4 style = "text-align:center">Modifications or No Modifications:</h4><select id = "modificationss" style = "margin-left:40vw; margin-bottom: 3vw">
+            <option style = "font-family: Abel">modifications</option>
+            <option style = "font-family: Abel">no modifications</option>
+
+        </select>
             <table>
+            <h1>If You Added Modifications...</h1>
                 <tr>
                     <td style="vertical-align: top">
                         <div id="box">
@@ -51,41 +67,52 @@
                         <label for="paper">Paper Modifications</label>
                         </div>
                     </td>
-                    <td style="vertical-align: top">
-                        <div id="box">
-                        <img src="Images/noneicon.png" id="largeicons"/>
-                        <input type="radio" name="mod" value="none"><br>
-                        <label for="none">No Modifications</label>
-                        </div>
-                    </td>
-                </tr>
+                </tr> 
                 <tr>
                     <td style="vertical-align: top">
                         <div id="showhide1" style="display:none;">
                         <div id="smallbox">
                             <img src="Images/leaficon.png" id="smallicons"/>
-                            <input type="checkbox" name="options" id="leaves">
+                            <a href="#" onclick="toggle_visibility('othertext1');">
+                            <input class = "one" id = "leaf" type="checkbox" name="natureoptions" id="leaves" value = "vegetation(leaves)">
                             <label for="leaves" id="options">Leaves</label><br>
+                            </a>
+                            <div id="othertext1" style= "display: none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "leaff" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div>
                         </div>
                         <div id="smallbox">
                             <img src="Images/flower2.png" id="smallicons"/>
-                            <input type="checkbox" name="options" id="flowers">
+                            <a href="#" onclick="toggle_visibility('othertext2');">
+                            <input id = "flower" type="checkbox" name="natureoptions" id="flowers" value = "vegetation(flowers)">
                             <label for="flowers" id="options">Flowers</label>
+                            </a>
+                            <div id="othertext2" style= "display: none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "flowerr" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div>
                         </div>
                         <div id="smallbox">
                             <img src="Images/trashicon.png" id="smallicons"/>
-                            <input type="checkbox" name="options" id="trash">
-                            <label for="trash" id="options">Compost / Food</label>   
+                            <a href="#" onclick="toggle_visibility('othertext3');">
+                            <input class = "one" id = "compost" type="checkbox" name="natureoptions" id="trash" value = "food/compost">
+                            <label for="trash" id="options">Compost / Food</label>
+                            </a>
+                            <div id="othertext3" style= "display: none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "compostt" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div> 
                         </div>
                         <div id="smallbox">
                             <img src="Images/treeicon.png" id="smallicons"/>
-                            <a href="#" onclick="toggle_visibility('othertext');">
-                            <input type="checkbox" name="options" id="other">
+                            <a href="#" onclick="toggle_visibility('othertext4');">
+                            <input class = "one" type="checkbox" name="natureoptions" id="other">
                             </a>
                             <label for="other" id="options">Other</label>  
-                            <div id="othertext" style="display: none">
+                            <div id="othertext4" style= "display: none">
                             <p style="font-size: 1.1vw">Please specify:</p>
-                            <input type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            <input id = "otherr" id = "others" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
                             </div>
                         </div>
                         </div>
@@ -94,23 +121,35 @@
                         <div id="showhide2" style="display: none">
                         <div id="smallbox">
                             <img src="Images/perfume.png" id="smallicons"/>
-                            <input type="checkbox" name="options" id="perfume">
-                            <label for="perfume" id="options">Fragrance</label>   
+                            <a href="#" onclick="toggle_visibility('othertext11');">
+                            <input type="checkbox" name="syntheticoptions" id="perfume">
+                            </a>
+                            <label for="perfume" id="options">Fragrance</label>
+                            <div id="othertext11" style= "display: none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "fragrancee" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div>   
                         </div>
                         <div id="smallbox">
                             <img src="Images/shirticon1.png" id="smallicons"/>
-                            <input type="checkbox" name="options" id="clothing">
-                            <label for="clothing" id="options">Clothing / Human Scents</label>   
+                            <a href="#" onclick="toggle_visibility('othertext12');">
+                            <input type="checkbox" name="syntheticoptions" id="clothing">
+                            </a>
+                            <label for="clothing" id="options">Clothing / Human Scents</label>
+                            <div id="othertext12" style= "display: none">
+                            <p style="font-size: 1.1vw">Please specify:</p>
+                            <input id = "clothingg" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            </div> 
                         </div>
                         <div id="smallbox">
                             <img src="Images/treeicon1.png" id="smallicons"/>
-                            <a href="#" onclick="toggle_visibility('othertext1');">
-                            <input type="checkbox" name="options" id="other1">
+                            <a href="#" onclick="toggle_visibility('othertext13');">
+                            <input type="checkbox" name="syntheticoptions" id="other1">
                             </a>
                             <label for="other1" id="options">Other</label>  
-                            <div id="othertext1" style="display: none">
+                            <div id="othertext13" style= "display: none">
                             <p style="font-size: 1.1vw">Please specify:</p>
-                            <input type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            <input id = "otherss" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
                             </div>
                         </div>
                         </div>
@@ -120,23 +159,23 @@
                         <div id="smallbox">
                             <img src="Images/coloricon.png" id="smallicons"/>
                             <a href="#" onclick="toggle_visibility('colortext');">
-                            <input type="checkbox" name="options" id="color">
+                            <input type="checkbox" name="trapoptions" id="color">
                             </a>
                             <label for="color" id="options">Color Change</label>  
-                            <div id="colortext" style="display: none">
+                            <div id="colortext" style= "display: none">
                             <p style="font-size: 1.1vw">Please specify:</p>
-                            <input type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            <input id = "colorss" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
                             </div>
                         </div>
                         <div id="smallbox">
                             <img src="Images/pattern.png" id="smallicons"/>
                             <a href="#" onclick="toggle_visibility('patterntext');">
-                            <input type="checkbox" name="options" id="pattern">
+                            <input type="checkbox" name="trapoptions" id="pattern">
                             </a>
                             <label for="pattern" id="options">Pattern Change</label>  
-                            <div id="patterntext" style="display: none">
+                            <div id="patterntext" style= "display: none">
                             <p style="font-size: 1.1vw">Please specify:</p>
-                            <input type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
+                            <input id = "patternss" type="text" style="font-family: Abel, sans-serif; font-size: 1.2vw">
                             </div>
                         </div>    
                         </div>
@@ -144,7 +183,7 @@
                 </tr>
             </table>
             <div id="nextbutton" style="margin: auto">
-                <input type="submit" value="Next" style="font-family: Abel, sans-serf; font-size: 1.2vw">
+                <input type="submit" value="Submit Modification Data and Continue" style="font-family: Abel, sans-serf; font-size: 1.2vw">
             </div>
         </form>
 

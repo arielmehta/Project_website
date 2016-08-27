@@ -1,6 +1,10 @@
 body {
     font-family: Abel, sans-serif;
 }
+.titless{
+    margin-top: 0.6vw;
+    margin-bottom: 0vw;
+}
 
 h1 {
     text-align: center;
@@ -28,11 +32,11 @@ h1 {
     margin: auto;
 }
 
-#postslink {
+a {
     color: #66b7a9;
 }
 
-#postslink:hover {
+a:hover {
     font-weight: bold;
 }
 
@@ -58,4 +62,25 @@ h1 {
     background-color: #c6ece8;
     padding: 5vw;
     text-align: center;
+}
+
+#humid{
+    display: inline-block;
+}
+#temp{
+    display: inline-block;
+}
+#rain{
+    display: inline-block;
+}
+
+
+#last{
+    margin-left: 15vw;
+}
+
+#submitbutton{
+    margin-left:50vw;
+    font-family: Abel;
+    font-size: 2vw;
 }

@@ -3,12 +3,10 @@ body {
 }
 
 * {box-sizing:border-box}
-
 #container {
     position: absolute;
     width: 50%;
     height: 70%;
-    background-color: #c6ece8;
     margin-left: 25%;
     margin-top: 5vw;
 }
@@ -66,7 +64,8 @@ body {
 
 #nextbutton {
     float: right;
-    background-color: white;
+    background: #c6ece8;
+    margin-top:5vw;
     border: none;
     padding: 0.5vw;
 }
@@ -74,3 +73,4 @@ body {
 #nextbutton:hover {
     opacity: 0.6;
 }
+
