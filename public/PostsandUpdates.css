@@ -84,8 +84,14 @@ img, div {
     
 }
 
-#titletext {
+#titlebox {
     position: absolute;
+    height: 30vw;
+    width: 100%;
+}
+
+#titletext {
+    position: relative;
     z-index: -1;
     background-image: url(Images/grass.png);
     background-size: cover;
@@ -333,6 +339,12 @@ input[name="options"] {
 
 
 /*Counting Guide*/
+#countbox {
+    width: 90%;
+    margin: auto;
+    background-color: #def2da;
+}
+
 #count {
     margin: auto;
     margin-top: 2vw;
