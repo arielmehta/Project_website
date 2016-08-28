@@ -3,12 +3,14 @@ body {
 }
 
 * {box-sizing:border-box}
+
 #container {
     position: absolute;
     width: 50%;
-    height: 70%;
+    height: 50%;
     margin-left: 25%;
     margin-top: 5vw;
+    background-color: #c2ebe6;
 }
 
 #form {
@@ -50,7 +52,7 @@ body {
 #warning {
     width: 6vw;
     float: right;
-    margin-right: 8%;
+    margin-right: 9%;
     margin-top: 10%
 }
 
@@ -63,14 +65,29 @@ body {
 }
 
 #nextbutton {
-    float: right;
-    background: #c6ece8;
-    margin-top:5vw;
+    text-align: center;
+    background: #89d8cf;
+    margin-top: 3vw;
     border: none;
     padding: 0.5vw;
 }
 
 #nextbutton:hover {
     opacity: 0.6;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#iconcredit {
+    margin: auto;
+    text-align: center;
+    font-size: 0.8vw;
 }
 
