@@ -30,6 +30,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    z-index: 1;
 }
 
 li a {
@@ -86,6 +87,7 @@ img, div {
 
 #titlebox {
     position: absolute;
+    z-index: -1;
     height: 30vw;
     width: 100%;
 }
@@ -162,6 +164,26 @@ td {
     border-bottom: solid 0.1vw black;
 }
 /*End of News*/
+
+#procedurelink {
+    margin: auto;
+    width: 40vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+#procedurelinktext {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: black;
+    background-color: #def2da;
+    border-radius: 5vw;
+    padding: 1.5vw;
+}
+
+#procedurelink:hover {
+    opacity: 0.6;
+}
 
 /*Identification Guide*/
 #identification {
