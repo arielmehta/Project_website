@@ -1,0 +1,28 @@
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+#thanks {
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 4vw;
+}
+
+#return {
+    text-align: center;
+    font-size: 3vw;
+    width: 35vw;
+    margin: auto;
+    padding: 1vw;
+    background-color: #9cded7;
+    border-radius: 5vw;
+}
+
+#return:hover {
+    opacity: 0.6;
+}
+
+#returntext {
+    text-decoration: none;
+    color: black;
+}
