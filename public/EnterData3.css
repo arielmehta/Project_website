@@ -31,7 +31,7 @@ button {
     text-align: center;
     width: 13vw;
     margin-left: 3vw;
-    margin-right: 3vw;
+    margin-right: 10vw;
 }
 
 #box:hover img{
@@ -58,12 +58,36 @@ img {
     z-index: -1;
 }
 
-#options {
+#natureoptions {
     position: relative;
     font-size: 1.2vw;
 }
 
-input[name="options"] {
+input[name="natureoptions"] {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0;
+}
+#syntheticoptions {
+    position: relative;
+    font-size: 1.2vw;
+}
+
+input[name="syntheticoptions"] {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0;
+}
+#trapoptions {
+    position: relative;
+    font-size: 1.2vw;
+}
+
+input[name="trapoptions"] {
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
@@ -84,7 +108,7 @@ input:checked ~ label{
     opacity: 0.7;
 }
 
-input[type=checkbox]:checked ~ label{
+input[type=checkbbox]:checked ~ label{
     font-weight: bold;
     font-size: 1.4vw;
 }
@@ -107,3 +131,9 @@ input[type=text] {
     text-align: center;
     background-color: white;
 }
+#two {
+    text-align: center;
+    transform: translateX(-30vw);
+    margin-top: 7vw;
+    width: 100vw;
+    background-color: #c6ece8;

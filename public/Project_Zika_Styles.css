@@ -18,6 +18,10 @@ body {
   box-sizing: inherit;
 }
 
+#years{
+    font-size:1.2vw;
+}
+
 #map {
     width: 50%;
     height: 50vw;
@@ -43,6 +47,16 @@ body {
     opacity: 0.85;
     position: relative;
     float: left;
+}
+#logobig{
+    width: 30vw;
+    height:30vw;
+    vertical-align: middle;
+    margin-top: 1vw;
+    margin-left: 35vw;
+    opacity: 0.85;
+    position: relative;
+    float: center;
 }
 
 #titletext {
@@ -190,14 +204,12 @@ img, div {
 }
 
 #video {
-    width: 56vw;
-    height: 31.5vw;
+    width: 100% !important;
+    height: 38vw;
 }
 
 #videobox {
-    width: 56vw;
-    height: 31.5vw;
     margin: auto;
-    margin-top: 6vw;
-    margin-bottom: 6vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
