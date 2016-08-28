@@ -4,14 +4,46 @@ body {
 }
 
 h1 {
+    font-size: 3vw;
+    margin-top: 3vw;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#mods {
     font-size: 2vw;
     margin-top: 3vw;
     text-align: center;
     margin-bottom: 2vw;
 }
 
-a {
-    text-decoration: none;
+#click {
+    font-size: 1.2vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#modsorno {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+}
+
+#modificationss {
+    margin: auto;
+    width: 9vw;
+    font-family: Abel;
+}
+
+select {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2vw;
 }
 
 input[name="mod"] {
@@ -30,8 +62,8 @@ button {
 #box {
     text-align: center;
     width: 13vw;
-    margin-left: 3vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 #box:hover img{
@@ -70,6 +102,7 @@ input[name="natureoptions"] {
     position: relative;
     opacity: 0;
 }
+
 #syntheticoptions {
     position: relative;
     font-size: 1.2vw;
@@ -93,10 +126,6 @@ input[name="trapoptions"] {
     border-radius: 50%;
     position: relative;
     opacity: 0;
-}
-
-input:checked ~ label{
-    font-weight: bold;
 }
 
 #smallbox {
@@ -127,10 +156,18 @@ input[type=text] {
     overflow: hidden;
 }
 
-#nextbutton {
+#nextbutton1 {
+    margin-top: 2vw;
     text-align: center;
     background-color: white;
+    font-family: 'Abel';
+    font-size: 1.2vw;
 }
+
+#nextbutton {
+    text-align: center;
+}
+
 #two {
     text-align: center;
     transform: translateX(-30vw);

@@ -30,15 +30,17 @@
         </script>
         
         <h1>Trap Modifications</h1>
-        <h3 style = "font-family: Abel; font-size: 1.5vw; text-align: center; margin-top: 1vw">Click on the Icons For Drop-down Selection</h3>
+        <p id="click">Click on the Icons For Drop-down Selection</p>
         <form class = "Trap_Setup_Form2" action = "EnterData4.html" onsubmit = "writeStartUserData2()">
-        <h4 style = "text-align:center">Modifications or No Modifications:</h4><select id = "modificationss" style = "margin-left:40vw; margin-bottom: 3vw">
+        <p id="modsorno">Modifications or No Modifications:</p>
+            <div id="modificationss">
+            <select>
             <option style = "font-family: Abel">modifications</option>
             <option style = "font-family: Abel">no modifications</option>
-
-        </select>
+            </select>
+            </div>
             <table>
-            <h1>If You Added Modifications...</h1>
+            <p id="mods">If You Added Modifications...</p>
                 <tr>
                     <td style="vertical-align: top">
                         <div id="box">
@@ -60,11 +62,11 @@
                     </td>
                     <td style="vertical-align: top">
                         <div id="box">
-                        <img src="Images/paper.png" id="largeicons"/>
+                        <img src="Images/plus.png" id="largeicons"/>
                         <a href="#" onclick="toggle_visibility('showhide3');">
                         <input type="radio" name="mod" id="paper" value="paper"><br>
                         </a>
-                        <label for="paper">Paper Modifications</label>
+                        <label for="paper">Other Modifications</label>
                         </div>
                     </td>
                 </tr> 
@@ -183,12 +185,12 @@
                 </tr>
             </table>
             <div id="nextbutton" style="margin: auto">
-                <input type="submit" value="Submit Modification Data and Continue" style="font-family: Abel, sans-serf; font-size: 1.2vw">
+                <input type="submit" value="Submit Modification Data and Continue" id="nextbutton1">
             </div>
         </form>
 
         <div id="iconcredit">
-        <p>Icons from IconFinder designers: <a href="https://www.iconfinder.com/olgakozachenko">Olha Kozachenko</a>, <a href="https://www.iconfinder.com/webalys">Webalys</a>, <a href="https://www.iconfinder.com/dariusdan">Darius Dan</a>, <a href="https://www.iconfinder.com/Zerg">Sergei Kokota</a>, <a href="https://www.iconfinder.com/webhostingmedia">David Cross</a>, <a href="http://www.elegantthemes.com/">Nick Roach</a></p>
+        <p>Icons from IconFinder designers: <a href="https://www.iconfinder.com/olgakozachenko">Olha Kozachenko</a>, <a href="https://www.iconfinder.com/webalys">Webalys</a>, <a href="https://www.iconfinder.com/dariusdan">Darius Dan</a>, <a href="https://www.iconfinder.com/Zerg">Sergei Kokota</a>, <a href="https://www.iconfinder.com/webhostingmedia">David Cross</a>, <a href="http://www.elegantthemes.com/">Nick Roach</a>, <a href="https://www.iconfinder.com/hirenvanza">hiren vanza</a></p>
         </div>
 
     </body>
