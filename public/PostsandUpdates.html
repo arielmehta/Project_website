@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <head>
         <title>Posts and Updates</title>
         <link rel="stylesheet" href="PostsandUpdates.css">
+
+<link rel="stylesheet" href="Project_Zika_Styles.css">
         <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
     </head>
@@ -24,71 +26,43 @@
         </script>
         
         <!--Top navigation bar-->
-        <div class = "navigation"> <!-- first main header -->
-            <ul class = "navbar"> 
-                <li><a href = "index.html"> Home </a></li>
-                <li><a href = "https://www.msnucleus.org/" target="_blank"> Math Science Nucleus </a></li>
-                <li><a href = "login.html"> Enter New Data </a></li>
-                <li><a href = "DisplayData.html"> Active Traps List </a></li>
-                <li><a href = "PostsandUpdates.html"> Posts and Updates </a></li>
-                <li><a href = "DataAnalysis.html"> Data Analysis </a></li>
-                <li><a href = "AboutUs.html"> About Us</a></li>
-            </ul>
+
+    <body>
+        <nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="mySidenav">
+          <a href="javascript:void(0)" onclick="w3_close()"
+          class="w3-closenav w3-large">Close &times;</a>
+                <a href = "index.html"> Home </a>
+                <a href = "login.html"> Enter New Data </a>
+                <a href = "DisplayData.html"> Active Traps List </a>
+                <a href = "PostsandUpdates.html"> Posts and Updates </a>
+                <a href = "DataAnalysis.html"> Data Analysis </a>
+                <a href = "AboutUs.html"> About Us</a>
+                <a href = "Photos.html"> Photos </a>
+                <a href = "https://www.msnucleus.org/" target="_blank"> Math Science Nucleus </a>
+        </nav>
+        <div id = "head">
+        <header style = "color: #333333">
+          <span id = "liney" class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
+        </header>
         </div>
+            <script>
+            function w3_open() {
+                document.getElementById("mySidenav").style.display = "block";
+            }
+            function w3_close() {
+                document.getElementById("mySidenav").style.display = "none";
+            }
+            </script>
         
         <div id="titlebox">
         </div>
         <div id="titletext">
             <div id="realtitletext">
-            <h1 class="title">Posts and Updates</h1>
+            <h1 class="titless" style = "font-family:Abel !important; display: inline !important ">Posts and Updates</h1>
             </div>
         </div>
-        
-        <!--End of top navigation bar-->
-<!--Taking this out
-        <table class="news">
-            <colgroup>
-                <col style="width: 50%"/>
-                <col style="width: 50%"/>
-            </colgroup>
-            <tr id="newsheadings">
-                <th class="badnews">Bad News</th>
-                <th>Good News</th>
-            </tr>
-            <tr id="newslinks">
-                <td id="badnewslinks" class="newslink">
-                    <a href="http://www.cnn.com/2016/08/01/health/cdc-miami-florida-zika-travel-warning/index.html" target="_blank" id="newslink">CDC issues travel warning over Miami Zika outbreak (Aug 2, 2016)</a>
-                </td>
-                <td class="newslink">
-                    <a href="http://news.harvard.edu/gazette/story/2016/05/paper-disc-can-quickly-detect-zika-virus-in-the-field/" target="_blank" id="newslink">Harvard researchers develop paper disc for Zika detection (May 6, 2016)</a>
-                </td>
-            </tr>
-            <tr id="newslinks">
-                <td id="badnewslinks" class="newslink">
-                    <a href="http://www.mercedsunstar.com/news/article93159007.html" target="_blank" id="newslink">Merced County reports first cases of human Zika Virus (Aug 1, 2016)</a>
-                </td>
-                <td class="newslink">
-                    <a href="http://www.utsystem.edu/news/2016/06/17/ut-zika-research-leading-global-efforts" target="_blank" id="newslink">Zika research progresses at the University of Texas Medical Branch (Jun 17, 2016)</a>
-                </td>
-            </tr>
-            <tr id="newslinks">
-                <td id="badnewslinks" class="newslink">
-                    <a href="https://www.washingtonpost.com/national/health-science/lifelong-care-heartaches-ahead-for-babies-born-with-zika-in-the-us/2016/07/24/2cc5e360-42d6-11e6-bc99-7d269f8719b1_story.html" target="_blank" id="newslink">Lifelong care, heartaches ahead for babies born with Zika in the US (Jul 24, 2016)</a>
-                </td>
-                <td class="newslink">
-                    <a href="https://www.statnews.com/2016/02/10/data-sharing-agreement-zika-virus/" target="_blank" id="newslink">Zika prompts data-sharing initiative among researchers (Feb 10, 2016)</a>
-                </td>
-            </tr>
-            <tr id="newslinks">
-                <td id="badnewslinks" class="newslink">
-                    <a href="http://time.com/4406114/zika-funding-bill-fails-as-congress-is-unable-to-reach-compromise/" target="_blank" id="newslink">Zika funding bill fails as Congress is unable to reach compromise (Jul 15, 2016)</a>
-                </td>
-                <td class="newslink">
-                    <a href="http://www.cnbc.com/2016/01/28/zika-epidemic-on-us-doorstep-spurs-vaccine-hunt.html" target="_blank" id="newslink">Zika epidemic on US doorstep spurs vaccine hunt (Jan 28, 2016)</a>
-                </td>
-            </tr>
-        </table>
-    -->
+
+<div id= "everything">
         <div id="procedurelink">
             <a id="procedurelinktext" href="Procedures.html" target="_blank">Click here to learn how to set up traps.</a>
         </div>
@@ -101,7 +75,7 @@
                 <col style="width: 33%"/>
             </colgroup>
             <tr>
-                <th colspan="3" id="idtitle">Identifying Mosquitoes and Eggs</th>
+                <th colspan="3" id="idtitle" style = "font-family:Abel !important">Identifying Mosquitoes and Eggs</th>
             </tr>
             <tr>
                 <td style="vertical-align: top">
@@ -214,24 +188,24 @@
             <tr>
                 <td style="vertical-align: top">
                     <div id="minibox1">
-                        <h3 id=numbertitle>1</h3>
-                        <h2 id="numbersubtitle">Count Egg Rafts</h2>
+                        <h3 id=numbertitle style = "font-family:Abel !important">1</h3>
+                        <h2 id="numbersubtitle" style = "font-family:Abel !important">Count Egg Rafts</h2>
                         <img id="countpic" src="Images/eggraft.jpg"/>
                         <p id="countdescription">In the above picture, the cluster of eggs counts as one egg raft. Note the number of egg rafts, then count the number of eggs that make up that raft.</p>
                     </div>
                 </td>
                 <td style="vertical-align: top">
                     <div id="minibox2">
-                        <h3 id=numbertitle>2</h3>
-                        <h2 id="numbersubtitle">Count Individual Eggs</h2>
+                        <h3 id=numbertitle style = "font-family:Abel !important">2</h3>
+                        <h2 id="numbersubtitle" style = "font-family:Abel !important">Count Individual Eggs</h2>
                         <img id="countpic" src="Images/egg.jpg"/>
                         <p id="countdescription">Count the number of individual eggs- these are the eggs floating around by themselves.</p>
                     </div>
                 </td>
                 <td style="vertical-align: top">
                     <div id="minibox3">
-                        <h3 id=numbertitle>3</h3>
-                        <h2 id="numbersubtitle1">Calculate Total</h2>
+                        <h3 id=numbertitle style = "font-family:Abel !important">3</h3>
+                        <h2 id="numbersubtitle1" style = "font-family:Abel !important">Calculate Total</h2>
                         <img id="countpic1" src="Images/calculator.png"/>
                         <p id="countdescription">Add up the number of eggs in the rafts with the number of individual eggs to obtain your total.</p>
                     </div>
@@ -468,7 +442,6 @@
 			</ul>
 		    </div>
         </div>
-        
 <!--Bottom navigation bar -->
 <footer>
     <div id = "bottomnavbar"; class= "navigation"> 
@@ -478,5 +451,6 @@
         </ul>
     </div>
 </footer>
+</div>
     </body>
 </html>

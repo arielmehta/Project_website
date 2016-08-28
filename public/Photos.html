@@ -5,23 +5,38 @@
     <head>
         <title>Photos</title>
         <link rel="stylesheet" href="Photos.css">
+        <link rel="stylesheet" href="Project_Zika_Styles.css">
         <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
-    </head>
-    
-    <body>
-        <!--Top navigation bar-->
-    <div class = "navigation"> <!-- first main header -->
-      <ul class = "navbar"> 
-        <li><a href = "index.html"> Home </a></li>
-        <li><a href = "https://www.msnucleus.org/"> Math Science Nucleus </a></li>
-        <li><a href = "login.html"> Enter New Data </a></li>
-        <li><a href = "DisplayData.html"> Active Traps List </a></li>
-        <li><a href = "PostsandUpdates.html"> Posts and Updates </a></li>
-        <li><a href = "DataAnalysis.html"> Data Analysis </a></li>
-        <li><a href = "AboutUs.html"> About Us</a></li>
-      </ul>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+  <body>
+    <nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="mySidenav">
+      <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-closenav w3-large">Close &times;</a>
+        <a href = "index.html"> Home </a>
+        <a href = "login.html"> Enter New Data </a>
+        <a href = "DisplayData.html"> Active Traps List </a>
+        <a href = "PostsandUpdates.html"> Posts and Updates </a>
+        <a href = "DataAnalysis.html"> Data Analysis </a>
+        <a href = "AboutUs.html"> About Us</a>
+        <a href = "Photos.html"> Photos </a>
+        <a href = "https://www.msnucleus.org/" target="_blank"> Math Science Nucleus </a>
+    </nav>
+    <div id = "head">
+    <header style = "color: #333333">
+      <span id = "liney" class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
+    </header>
     </div>
+      <script>
+      function w3_open() {
+          document.getElementById("mySidenav").style.display = "block";
+      }
+      function w3_close() {
+          document.getElementById("mySidenav").style.display = "none";
+      }
+      </script>
         
     <div class="slideshow-container">
         <div class="mySlides fade">

@@ -10,6 +10,7 @@ html {
 
 body {
     margin: 0;
+    font-family: Abel;
 }
 
 *,
@@ -114,6 +115,7 @@ li a {
 
 a {
     text-decoration: none;
+    font-family: Abel;
 }
 
 li a {
@@ -212,4 +214,12 @@ img, div {
     margin: auto;
     margin-top: 2vw;
     margin-bottom: 2vw;
+}
+
+#head{
+    background-color: #333333;
+}
+#liney{
+    color: white;
+
 }

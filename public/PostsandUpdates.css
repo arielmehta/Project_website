@@ -76,7 +76,7 @@ img, div {
     display: block;
 }
 
-.title {
+.titless {
     text-align: center;
     font-size: 7vw;
     color: white;
@@ -787,4 +787,10 @@ details > p {
 #courtesy {
     font-size: 0.8vw;
     text-align: center;
+}
+#everything{
+    transform: translateY(30vw);
+}
+#bottomnavbar{
+    transform: translateY(100vw);
 }
