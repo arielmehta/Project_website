@@ -229,12 +229,16 @@ img, div {
     and (min-device-width : 320px)
     and (max-device-width : 480px) {
         #menuicon {
-            width: 10vw;
-            height: 10vw;
+            width: 11vw;
+            height: 11vw;
         }
         
         #menubox {
-            width: 100%;
+            width: 100% !important;
+        }
+        
+        #menu {
+            font-size: 2vw !important;
         }
 }
 
