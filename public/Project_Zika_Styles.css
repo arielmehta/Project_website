@@ -235,10 +235,15 @@ img, div {
         
         #menu {
             font-size: 3vw !important;
+            padding: 1vw !important;
         }
         
         #menubox {
             margin-top: 11vw !important;
+        }
+        
+        #menucontainer {
+            width: 20vw;
         }
 }
 
