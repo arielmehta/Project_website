@@ -217,6 +217,14 @@ img, div {
     margin-bottom: 4vw;
 }
 
+@media only screen 
+  and (min-width: 768px) {     
+    #menuicon {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
 #menuicon {
     float: right;
     padding: 1vw;
