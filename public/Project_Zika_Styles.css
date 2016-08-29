@@ -240,10 +240,11 @@ img, div {
         
         #menubox {
             margin-top: 11vw !important;
+            width: 27vw !important;
         }
         
         #menucontainer {
-            width: 25vw !important;
+            width: 27vw !important;
         }
 }
 
