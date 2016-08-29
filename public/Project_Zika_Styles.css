@@ -236,6 +236,7 @@ img, div {
         #menu {
             font-size: 3vw !important;
             padding: 1vw !important;
+            width: 27vw !important;
         }
         
         #menubox {
