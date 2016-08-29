@@ -237,6 +237,7 @@ img, div {
             font-size: 8vw !important;
             padding: 3vw !important;
             width: 55vw !important;
+            background:rgba(1,1,1,0.9) !important;
         }
         
         #menubox {
