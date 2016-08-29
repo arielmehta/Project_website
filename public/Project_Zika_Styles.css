@@ -225,6 +225,31 @@ img, div {
     z-index: 5;
 }
 
+@media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        #menuicon {
+            width: 11vw;
+            height: 11vw;
+        }
+        
+        #menu {
+            font-size: 6.3vw !important;
+            padding: 3vw !important;
+            width: 55vw !important;
+            background:rgba(1,1,1,0.7) !important;
+        }
+        
+        #menubox {
+            margin-top: 11vw !important;
+            width: 55vw !important;
+        }
+        
+        #menucontainer {
+            width: 55vw !important;
+        }
+}
+
 #menucontainer {
     position: absolute;
     text-align: right;
