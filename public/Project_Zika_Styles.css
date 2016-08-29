@@ -233,12 +233,13 @@ img, div {
             height: 11vw;
         }
         
-        #menubox {
-            width: 100% !important;
+        #menu {
+            font-size: 3vw !important;
+            width: 40% !important;
         }
         
-        #menu {
-            font-size: 2vw !important;
+        #menubox {
+            margin-top: 11vw;
         }
 }
 
