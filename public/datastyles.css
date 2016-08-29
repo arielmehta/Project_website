@@ -6,7 +6,8 @@
    display: table;
    width: 100vw;
    margin-top: 1em;
-   margin-left: 25vw;
+  margin: auto;
+    width: auto;
 }
 
 #subtitle{

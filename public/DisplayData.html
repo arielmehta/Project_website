@@ -20,31 +20,34 @@
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
   <body>
-    <nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="mySidenav">
-      <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-closenav w3-large">Close &times;</a>
-        <a href = "index.html"> Home </a>
-        <a href = "login.html"> Enter New Data </a>
-        <a href = "DisplayData.html"> Active Traps List </a>
-        <a href = "PostsandUpdates.html"> Posts and Updates </a>
-        <a href = "DataAnalysis.html"> Data Analysis </a>
-        <a href = "AboutUs.html"> About Us</a>
-        <a href = "Photos.html"> Photos </a>
-        <a href = "https://www.msnucleus.org/" target="_blank"> Math Science Nucleus </a>
-    </nav>
-    <div id = "head">
-    <header style = "color: #333333">
-      <span id = "liney" class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
-    </header>
-    </div>
-      <script>
-      function w3_open() {
-          document.getElementById("mySidenav").style.display = "block";
-      }
-      function w3_close() {
-          document.getElementById("mySidenav").style.display = "none";
-      }
-      </script>
+            <script type="text/javascript">
+        <!--
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        //-->
+        </script>
+        
+		<nav id="menucontainer">
+                <a href="#" onclick="toggle_visibility('menubox');">
+                    <img src="Images/menu.png" id="menuicon"/>
+                </a>
+            <div id="menubox" style="display: none">
+				<a id="menu" href = "index.html"> Home </a>
+				<a id="menu" href = "login.html"> Enter New Data </a>
+				<a id="menu" href = "DisplayData.html" style="display: none"> Active Traps List </a>
+				<a id="menu" href = "PostsandUpdates.html"> Posts and Updates </a>
+				<a id="menu" href = "DataAnalysis.html"> Data Analysis </a>
+				<a id="menu" href = "AboutUs.html"> About Us</a>
+				<a id="menu" href = "Photos.html"> Photos </a>
+				<a id="menu" href = "https://www.msnucleus.org/" target="_blank"> Math Science Nucleus </a>
+            </div>
+		</nav>
+    
 <h1 id = "subtitle" style = "font-family:Abel !important"> Active Traps List </h1>
   <div id="data_table">
 

@@ -24,6 +24,49 @@ body {
 
 /* Navigation bar css */
 
+#menuicon {
+    float: right;
+    padding: 1vw;
+    width: 5vw;
+    height: 5vw;
+    z-index: 5;
+}
+
+#menucontainer {
+    position: absolute;
+    text-align: right;
+    width: 13vw;
+    z-index: 5;
+    height: auto;
+    right: 0;
+}
+
+#menuicon:hover {
+    opacity: 0.5;
+}
+
+#menubox {
+    z-index: 4;
+    width: 13vw;;
+    margin-top: 5vw;
+    height: auto;
+}
+
+#menu {
+    background:rgba(1,1,1,0.5);
+    color: white;
+    padding: 0.8vw;
+    padding-right: 1.2vw;
+    margin: 0;
+    width: 13vw;
+    font-size: 1.2vw;
+    display: block;
+}
+
+#menu:hover {
+    background: rgba(1,1,1,0.7) !important;
+}
+
 .navbar {
     list-style-type: none;
     margin: 0;

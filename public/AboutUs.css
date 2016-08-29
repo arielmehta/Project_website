@@ -36,6 +36,49 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 
+#menuicon {
+    float: right;
+    padding: 1vw;
+    width: 5vw;
+    height: 5vw;
+    z-index: 5;
+}
+
+#menucontainer {
+    position: absolute;
+    text-align: right;
+    width: 13vw;
+    z-index: 5;
+    height: auto;
+    right: 0;
+}
+
+#menuicon:hover {
+    opacity: 0.5;
+}
+
+#menubox {
+    z-index: 4;
+    width: 13vw;;
+    margin-top: 5vw;
+    height: auto;
+}
+
+#menu {
+    background:rgba(1,1,1,0.5);
+    color: white;
+    padding: 0.8vw;
+    padding-right: 1.2vw;
+    margin: 0;
+    width: 13vw;
+    font-size: 1.2vw;
+    display: block;
+}
+
+#menu:hover {
+    background: rgba(1,1,1,0.7) !important;
+}
+
 li a:hover {
     background-color: #111;
 }
@@ -76,9 +119,10 @@ body {
 .title {
     text-align: center;
     font-size: 7vw;
+    width: 30vw;
     color: white;
     z-index: 2;
-    vertical-align: middle;
+    margin-top: 4.5vw !important;
 }
 
 #titletext {
@@ -96,9 +140,17 @@ body {
     vertical-align: middle;
     width: 100%;
     margin: auto;
-    position: relative;
+    position: absolute;
     padding-top: 4vw;
     height: 26vw;
+}
+
+#logo{
+    width: 20vw;
+    vertical-align: middle;
+    opacity: 0.85;
+    position: relative;
+    float: left;
 }
 
 .headers {
@@ -214,7 +266,7 @@ body {
     display: table-cell;
     background-color: #9cded7;
     width: 35%;
-    height: 53vw;
+    height: 59vw;
     position: relative;
     float: right;
     margin-right: 9vw;
@@ -255,8 +307,9 @@ body {
 }
 
 table {
-    width: 80%;
-    transform: translate(10%);
+    width: 80% !important;
+    margin: auto;
+
 }
 
 td {
@@ -282,6 +335,7 @@ td {
     width: 14vw;
     height: 14vw;
     border-radius: 50%;
+    margin: auto;
 }
 
 #role {
