@@ -234,18 +234,18 @@ img, div {
         }
         
         #menu {
-            font-size: 6vw !important;
-            padding: 2.5vw !important;
-            width: 40vw !important;
+            font-size: 8vw !important;
+            padding: 3vw !important;
+            width: 55vw !important;
         }
         
         #menubox {
             margin-top: 11vw !important;
-            width: 40vw !important;
+            width: 55vw !important;
         }
         
         #menucontainer {
-            width: 40vw !important;
+            width: 55vw !important;
         }
 }
 
