@@ -24,8 +24,8 @@ body {
 }
 
 #map {
-    width: 50%;
-    height: 50vw;
+    width: 85%;
+    height: 60vw;
     margin: auto;
     margin-top: 0;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 #logo{
-    width: 20vw;
+    width: 15vw;
     vertical-align: middle;
     margin-top: 1vw;
     margin-left: 20vw;
@@ -54,7 +54,7 @@ body {
     height:30vw;
     vertical-align: middle;
     margin-top: 1vw;
-    margin-left: 35vw;
+    margin-left: 3vw;
     opacity: 0.85;
     position: relative;
     float: center;

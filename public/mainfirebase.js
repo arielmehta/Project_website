@@ -4,7 +4,7 @@ function initMap() {
 	var mapDiv = document.getElementById('map');
 	map = new google.maps.Map(mapDiv, {
 	    center: {lat: 37.557419, lng: -121.989398},
-	    zoom: 11
+	    zoom: 13
 	});
 }
 
@@ -31,12 +31,13 @@ window.onload= function(){
 		var month = Trap_Setup_Form[keys].Start_Month;
 		var day = Trap_Setup_Form[keys].Start_Day;
 		var year = Trap_Setup_Form[keys].Start_Year;
+		var label = trap_number.toString();
 		var title = "Trap Number: " + trap_number + '<div> </div>' + " Team Member: " + Trap_Setup_Form[keys].Initials + '<div></div>';
 		var body = " Date Placed: " + month + "/" + day + "/" + year;
 		var contents = title + body;
 		// console.log(contents);
 		// console.log(position);
-		addmarkers(position, title, contents);
+		addmarkers(position, title, contents, label);
 	};
 }
 
@@ -57,11 +58,12 @@ var firebaseRefd = new Firebase(urld); // egg data found form
 var firebaseReff = new Firebase(url); // old version for Trap_Collection_Form
 
 //google maps api for home page trap map, function called onload
-function addmarkers(positionval, title, content){
+function addmarkers(positionval, title, content, label){
 	var marker = new google.maps.Marker({
 	  position: positionval,
 	  map: map,
-	  title: title
+	  title: title,
+	  label: label
 });
 	var infowindow = new google.maps.InfoWindow({
 	  content: content
@@ -112,6 +114,7 @@ firebaseReff.on('value', function(snapshot){
 function writeStartUserData(){
 	console.log("writing data");
 	var initials = document.getElementById('initials').value;
+	var name = document.getElementById('name').value;
 	var start_date_month = document.getElementById('datemonth').value;
 	var start_date_day = document.getElementById('dateday').value;
 	var start_date_year = document.getElementById('dateyear').value;
@@ -121,6 +124,7 @@ function writeStartUserData(){
 	var postRef= firebaseRefa.push();// creating form submission id
 	postRef.set({                  //creating children data for each form submission
 		Initials: initials,
+		Full_Name: name,
 		Start_Month: start_date_month,  
 		Start_Day: start_date_day, 
 		Start_Year: start_date_year,

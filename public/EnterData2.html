@@ -11,6 +11,8 @@
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
     <script type="text/javascript" src="mainfirebase.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <title>Enter Data</title>
 
         <!-- styling sheets-->
@@ -22,11 +24,14 @@
         <div id="container">
         <div id="form">
         <form class = "Trap_Setup_Form" onsubmit = "writeStartUserData()" action = "EnterData3.html" >
-            Your initials:<br>
-            <input id= "initials" style="font-family: Abel; font-size: 1.2vw; margin-bottom: 1vw" type="text" name="Initials">
+            Username or initials (this will appear publicly on the traps list)<br>
+            <input id= "initials" style="font-family: Abel; font-size: 1.2vw; margin-top: 0vw; margin-bottom: 1vw" type="text" name="Initials">
+            <br>
+            Your Full Name:<br>
+            <input id= "name" style="font-family: Abel; font-size: 1.2vw; margin-top: 0vw; margin-bottom: 1vw" type="text" name="Initials">
             <br>
             Date:<br>
-                <select id = "datemonth" style="font-family: Abel; font-size: 1.2vw; margin-bottom: 1vw" name="Month">
+                <select id = "datemonth" style="font-family: Abel; font-size: 1.2vw; margin-top: 0vw;margin-bottom: 1vw" name="Month">
                     <option style="font-family: Abel; font-size: 1.2vw" value="01">January</option>
                     <option style="font-family: Abel; font-size: 1.2vw" value="02">February</option>
                     <option style="font-family: Abel; font-size: 1.2vw" value="03">March</option>
@@ -88,14 +93,8 @@
             Latitude:<br>
             <input id = "lat" style="font-family: Abel; font-size: 1.2vw; margin-bottom: 1vw" type="text" name="Latitude">
             <br>
-            <input id="nextbutton" style="font-family: Abel; font-weight: bold; font-size: 1.3vw" type="submit" value="Submit Basic Info and Continue">
+            <input id="nextbutton" style="font-family: Abel; font-weight: bold; font-size: 1.3vw" type="submit" value="Submit Basic Info and Continue" disabled= "disabled"/>
         </form>
-        </div>
-        <div id="iconcredit">
-            <p>Icons from IconFinder designers <a href="https://www.elegantthemes.com/">Nick Roach</a>, <a href="https://www.iconfinder.com/yanlu">Yannick Lung</a></p>    
-        </div>
-        </div>
-        
         <div id="latlong">
             <div id="latlongtext">
             <p>Find your latitude and longitude here.</p>
@@ -108,9 +107,29 @@
             </a>
         </div>
         
-        <div>
-            <img src="Images/warningicon.png" id="warning"/>
-            <p id="warningtext">Remember to check your traps every 3 days! If you find eggs in a trap, submit that data as soon as possible.</p>
         </div>
+        </div>
+        <script>
+            (function() {
+                $('form > input').keyup(function() {
+
+                    var empty = false;
+                    $('form > input').each(function() {
+                        if ($(this).val() == '') {
+                            empty = true;
+                        }
+                    });
+
+                    if (empty) {
+                        $('#nextbutton').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+                    } else {
+                        $('#nextbutton').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+                    }
+                });
+            })()
+        </script>
+        </div>
+        
+
     </body>
 </html>
