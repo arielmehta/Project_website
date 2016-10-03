@@ -6,7 +6,46 @@ html {
     border: 0;
     left: 0;
 }
+.parallax { 
+    /* The image used */
+    background-image: url("Images/nicer.jpg");
+    opacity: 0.7;
+    /* Set a specific height */
+    height: 60vw !important;
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallaxf { 
+    /* The image used */
+    background-image: url("Images/nicer.jpg");
+    opacity: 0.7;
+    /* Set a specific height */
+    height: 80vw !important;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 { 
+    /* The image used */
+    background-image: url("Images/nicer.jpg");
+    opacity: 0.7;
+    /* Set a specific height */
+    height: 5vw !important; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 div {
     display: block;
 }
@@ -151,7 +190,6 @@ body {
 
 #titletext {
     position: relative;
-    background-image: url(Images/grass.png);
     background-size: cover;
     width: 100%;
     height: 30vw;
@@ -183,12 +221,14 @@ body {
 }
 
 #VCScontainer {
-    background-color: white;
+    background-color: black;
+    opacity: 0.7;
     position: relative;
     width: 100%;
     padding-bottom: 5vw;
     padding-top: 1vw;
     vertical-align: middle;
+    color: white;
 }
 
 #Vector {
@@ -236,7 +276,9 @@ body {
 #MSNcontainer {
     display: table;
     position: relative;
-    background: #c6ece8;
+    background: black;
+    color: white;
+    opacity: 0.9;
     width: 100%;
     height: 47vw;
     border: 0;
@@ -288,8 +330,9 @@ body {
 
 #Bluefordcontainer {
     display: table-cell;
-    background-color: #9cded7;
+    background-color: gray;
     width: 35%;
+    opacity: 0.9;
     height: 59vw;
     position: relative;
     float: right;
@@ -318,20 +361,21 @@ body {
 #teamcontainer {
     float: left;
     position: relative;
-    background-color: transparent;
+    background-color: black;
+    opacity: 0.9;
     width: 100%;
-    clear: both;
-    margin-bottom: 6vw;
+    margin-top:0vw;
 }
 
 #teamheading {
-    margin-top: 6vw;
+    margin-top: 0vw;
     text-align: center;
     font-size: 3vw;
 }
 
 table {
     width: 80% !important;
+    height: 70vw;
     margin: auto;
 
 }
@@ -344,6 +388,7 @@ td {
 
 #name {
     font-size: 1.7vw;
+    color: whitesmoke;
     margin: 0;
 }
 
@@ -352,7 +397,7 @@ td {
     margin: 0;
     font-style: normal;
     margin-bottom: 0;
-    color: #666666;
+    color: white;
 }
 
 #phoebepic {
@@ -365,7 +410,7 @@ td {
 #role {
     font-size: 1.3vw;
     margin-top: 0;
-    color: #666666;
+    color: whitesmoke;
     margin-bottom: 0;
     
 }
