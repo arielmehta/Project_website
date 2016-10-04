@@ -7,10 +7,10 @@ body {
 #container {
     position: absolute;
     width: 50%;
-    height: 70%;
-    background-color: #c6ece8;
+    height: 60vw;
     margin-left: 25%;
     margin-top: 5vw;
+    background-color: #c2ebe6;
 }
 
 #form {
@@ -21,10 +21,8 @@ body {
 }
 
 #globe {
-    position: absolute;
-    margin-top: 20%;
-    margin-left: 8%;
-    height: 6vw;
+    height: 7vw;
+    transform: translateY(16vw)translateX(-12vw);
 }
 
 #globe:hover {
@@ -52,7 +50,7 @@ body {
 #warning {
     width: 6vw;
     float: right;
-    margin-right: 8%;
+    margin-right: 9%;
     margin-top: 10%
 }
 
@@ -65,8 +63,9 @@ body {
 }
 
 #nextbutton {
-    float: right;
-    background-color: white;
+    text-align: center;
+    background: #89d8cf;
+    margin-top: 3vw;
     border: none;
     padding: 0.5vw;
 }
@@ -74,3 +73,19 @@ body {
 #nextbutton:hover {
     opacity: 0.6;
 }
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#iconcredit {
+    margin: auto;
+    text-align: center;
+    font-size: 0.8vw;
+}
+

@@ -5,23 +5,43 @@
     <head>
         <title>Photos</title>
         <link rel="stylesheet" href="Photos.css">
+        <link rel="stylesheet" href="Project_Zika_Styles.css">
         <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
-    </head>
-    
-    <body>
-        <!--Top navigation bar-->
-    <div class = "navigation"> <!-- first main header -->
-      <ul class = "navbar"> 
-        <li><a href = "index.html"> Home </a></li>
-        <li><a href = "https://www.msnucleus.org/"> Math Science Nucleus </a></li>
-        <li><a href = "Log_In_Page.html"> Enter New Data </a></li>
-        <li><a href = "DisplayData.html"> Our Data </a></li>
-        <li><a href = "PostsandUpdates.html"> Posts and Updates </a></li>
-        <li><a href = "Photos.html"> Photos </a></li>
-        <li><a href = "AboutUs.html"> About Us</a></li>
-      </ul>
-    </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+  <body>
+    <script type="text/javascript">
+        <!--
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        //-->
+        </script>
+        
+		<nav id="menucontainer">
+                <a href="#" onclick="toggle_visibility('menubox');">
+                    <img src="Images/menu.png" id="menuicon"/>
+                </a>
+            <div id="menubox" style="display: none">
+				<a id="menu" href = "index.html"> Home </a>
+				<a id="menu" href = "login.html"> Enter New Data </a>
+        <a id="menu" href = "full_map.html"> Map </a>
+        <a id="menu" href = "Procedures.html"> How to Set Up Traps </a>
+				<a id="menu" href = "DisplayData.html"> Active Traps List </a>
+				<a id="menu" href = "PostsandUpdates.html"> Posts and Updates </a>
+				<a id="menu" href = "DataAnalysis.html"> Data Analysis </a>
+				<a id="menu" href = "AboutUs.html"> About Us</a>
+				<a id="menu" href = "Photos.html"> Photos </a>
+        <a id="menu" href = "https://www.mosquitoes.org/" target="_blank"> ACMAD Website </a>
+				<a id="menu" href = "https://www.msnucleus.org/" target="_blank"> Math Science Nucleus </a>
+            </div>
+		</nav>
         
     <div class="slideshow-container">
         <div class="mySlides fade">

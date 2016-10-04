@@ -1,6 +1,7 @@
 body {
     text-align: center;
     font-family: Abel, sans-serif;
+    margin-top: 3vw;
 }
 
 .content {
@@ -28,6 +29,7 @@ body {
 #setuptext {
     line-height: 11vw;
     font-size: 1.3vw;
+    color: black;
 }
 
 #found {
@@ -45,6 +47,7 @@ body {
 #foundtext {
     line-height: 11vw;
     font-size: 1.3vw;
+    color: black;
 }
 
 #warning {
@@ -56,4 +59,3 @@ body {
     color: red;
     font-size: 1.1vw;
 }
-

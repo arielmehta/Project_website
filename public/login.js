@@ -9,7 +9,7 @@ var config = {
 
 
 var uiConfig = {
-    'signInSuccessUrl': 'DataPageFirebase.html',
+    'signInSuccessUrl': 'EnterData1.html',
     'signInOptions': [firebase.auth.GoogleAuthProvider.PROVIDER_ID]
 };
 

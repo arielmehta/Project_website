@@ -2,6 +2,7 @@ html {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    font-family: Abel, sans-serif !important;
 }
 
 *,
@@ -9,19 +10,117 @@ html {
 *:after {
   box-sizing: inherit;
 }
+.parallaxd { 
+    /* The image used */
+    background-image: url("Images/nicer.jpg");
+    opacity: 1 !important;
+    /* Set a specific height */
+    height: 40vw; 
 
-body {
-    margin: 0;
-    font-family: 'Abel', sans-serif;
-    position: relative;
-    padding-bottom: 2.7em;
-    min-height: 100%;
-    width: 100%;
-    display: table;
-    table-layout: fixed;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2s { 
+    /* The image used */
+    background-image: url("Images/nicer.jpg");
+    opacity: 1 !important;
+    /* Set a specific height */
+    height: 10vw; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallaxs2 { 
+    /* The image used */
+    background-image: url("Images/nicer.jpg");
+    opacity: 0.7 !important;
+    /* Set a specific height */
+    height: 50vw; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bottomchunck{
+    background-color: black;
 }
 
+
 /* Navigation bar css */
+@media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        #menuicon {
+            width: 11vw;
+            height: 11vw;
+        }
+        
+        #menu {
+            font-size: 6.3vw !important;
+            padding: 3vw !important;
+            width: 55vw !important;
+            background:rgba(1,1,1,0.7) !important;
+        }
+        
+        #menubox {
+            margin-top: 11vw !important;
+            width: 55vw !important;
+        }
+        
+        #menucontainer {
+            width: 55vw !important;
+        }
+}
+#menuicon {
+    float: right;
+    padding: 1vw;
+    width: 5vw;
+    height: 5vw;
+    z-index: 5;
+}
+
+#menucontainer {
+    position: absolute;
+    text-align: right;
+    width: 13vw;
+    z-index: 5;
+    height: auto;
+    right: 0;
+}
+
+#menuicon:hover {
+    opacity: 0.5;
+}
+
+#menubox {
+    z-index: 4;
+    width: 13vw;;
+    margin-top: 5vw;
+    height: auto;
+}
+
+#menu {
+    background:rgba(1,1,1,0.5);
+    color: white;
+    padding: 0.8vw;
+    padding-right: 1.2vw;
+    margin: 0;
+    width: 13vw;
+    font-size: 1.2vw;
+    display: block;
+}
+
+#menu:hover {
+    background: rgba(1,1,1,0.7) !important;
+}
 
 .navbar {
     list-style-type: none;
@@ -29,6 +128,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    z-index: 1;
 }
 
 li a {
@@ -48,18 +148,12 @@ li a {
 li a:hover {
     background-color: #111;
 }
-.navigation {
-    margin-top: 0px;
-    font-family: Abel;
-}
 
-.pagetitles {
+.navigation {
+    position: absolute;
+    width: 100%;
+    margin-top: 0;
     font-family: Abel;
-    text-align: left;
-    margin-top: 3vw; 
-    text-align: center;
-    margin-left: 0;
-    font-size: 5vw;
 }
 
 footer {
@@ -80,29 +174,48 @@ img, div {
     display: block;
 }
 
-.title {
+.titless {
     text-align: center;
     font-size: 7vw;
     color: white;
-    position: absolute;
     z-index: 2;
-    clear: both;
-    transform: translateX(24.5vw) translateY(-29.5vw);
+    vertical-align: middle;
+    
 }
 
-.grass {
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    clear: both;
-    background-size: cover;
+#titlebox {
+    position: absolute;
     z-index: -1;
+    height: 30vw;
+    width: 100%;
+}
+
+#titletext {
+    position: relative;
+    z-index: -1;
+    background-size: cover;
+    width: 100%;
+    height: 30vw;
+    opacity: 0.7;
+    font-weight: 900;
+    font-family: 'Abel', sans-serif;
+}
+
+#realtitletext {
+    vertical-align: middle;
+    width: 50%;
+    transform: translateX(50%);
+    display: table-cell;
+    width: 100%;
+    height: 30vw;
 }
 
 /*News*/
 .news {
+    z-index: 1;
+    margin-top: 30vw;
     width: 100%;
+    position: relative;
     border-collapse: collapse;
 }
 
@@ -149,6 +262,266 @@ td {
 }
 /*End of News*/
 
+#procedurelink {
+    margin: auto;
+    width: 40vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+#procedurelinktext {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: black;
+    background-color: #def2da;
+    border-radius: 5vw;
+    padding: 1.5vw;
+}
+.parallaxs{
+    transform: translateY(-5vw);
+}
+#procedurelink:hover {
+    opacity: 0.6;
+}
+
+/*Identification Guide*/
+#identification {
+    margin: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+#idtitle {
+    font-size: 3vw;
+    color: white;
+    border-bottom: none;
+}
+
+input[name="genus"] {
+    width: 15vw;
+    height: 15vw;
+    z-index: 1;
+    opacity: 0;
+}
+
+.numbaone{
+    margin-top: 0vw;
+    background-color: black;
+    opacity: 0.9;
+}
+
+#box {
+    margin: auto;
+    width: 15vw;
+}
+
+#box:hover {
+    opacity: 0.7;
+}
+
+#anophelestitle {
+    z-index: -1;
+    position: absolute;
+    background-color: #a9e0cb;
+    font-size: 2.4vw;
+    width: 15vw;
+    height: 15vw;
+    text-align: center;
+    padding-top: 5.8vw;
+    border-radius: 50%;
+}
+
+#aedestitle {
+    z-index: -1;
+    position: absolute;
+    background-color: #c6ece8;
+    font-size: 2.4vw;
+    width: 15vw;
+    height: 15vw;
+    text-align: center;
+    padding-top: 5.8vw;
+    border-radius: 50%;
+}
+
+#culextitle {
+    z-index: -1;
+    position: absolute;
+    background-color: #cae7c4;
+    font-size: 2.4vw;
+    width: 15vw;
+    height: 15vw;
+    text-align: center;
+    padding-top: 5.8vw;
+    border-radius: 50%;
+}
+
+#minibox {
+    margin: auto;
+    width: 12vw;
+    height: 2vw;
+}
+
+#minibox:hover {
+    opacity: 0.7;
+}
+
+#anopheleseggtitle {
+    font-size: 1.6vw;
+    width: 12vw;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    height: 2vw;
+    background-color: #96d9c0;
+    border-radius: 5%;
+}
+
+#aedeseggtitle {
+    font-size: 1.6vw;
+    width: 12vw;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    height: 2vw;
+    background-color: #b3e6e0;
+    border-radius: 5%;
+}
+
+#culexeggtitle {
+    font-size: 1.6vw;
+    width: 12vw;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    height: 2vw;
+    background-color: #bae0b2;
+    border-radius: 5%;
+}
+
+#eggpicture {
+    width: 13vw;
+    margin: auto;
+    margin-top: 1vw;
+    border-radius: 5%;
+}
+
+input[name="options"] {
+    z-index: 1;
+    opacity: 1;
+    width: 12vw;
+    height: 3vw;
+    opacity: 0;
+}
+
+#anophelesadulttitle {
+    z-index: -1;
+    background-color: #83d2b5;
+    font-size: 1.6vw;
+    width: 12vw;
+    height: 2vw;
+    position: absolute;
+    margin-top: 1vw;
+    border-radius: 5%;
+}
+
+#aedesadulttitle {
+    z-index: -1;
+    background-color: #a0e0d8;
+    font-size: 1.6vw;
+    width: 12vw;
+    height: 2vw;
+    position: absolute;
+    margin-top: 1vw;
+    border-radius: 5%;
+}
+
+#culexadulttitle {
+    z-index: -1;
+    background-color: #aad9a0;
+    font-size: 1.6vw;
+    width: 12vw;
+    height: 2vw;
+    position: absolute;
+    margin-top: 1vw;
+    border-radius: 5%;
+}
+
+#adultpicture {
+    width: 13vw;
+    margin: auto;
+    margin-top: 4vw;
+    border-radius: 5%;
+}
+
+#adultpicture1 {
+    width: 12vw;
+    margin: auto;
+    margin-top: 4vw;
+    border-radius: 5%;
+}
+
+#iddescription {
+    color: white;
+    font-size: 1.3vw;
+}
+/*End of Identification Guide*/
+
+
+/*Counting Guide*/
+#countbox {
+    width: 90%;
+    margin: auto;
+    opacity: 1 !important;
+    background-color: #def2da;
+}
+
+#count {
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+#counttitle {
+    border-bottom: none;
+    font-size: 3vw;
+}
+
+#countdescription {
+    font-size: 1.3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+#numbertitle {
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+}
+
+#numbersubtitle {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 0.2vw;
+}
+
+#numbersubtitle1 {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 0.2vw;
+    margin-bottom: 0;
+}
+
+#countpic {
+    width: 80%;
+    margin: auto;
+}
+
+#countpic1 {
+    width: 70%;
+    margin: auto;
+}
+/*End of Counting Guide */
 /*Mosquito Info*/
 .mosquitoes {
     width: 50%;
@@ -232,9 +605,8 @@ td {
     z-index: 2;
     width: 45%;
     float: left;
+    clear: both;
     margin: 2vw;
-    position: relative;
-    display: inline-block;
 }
 
 #timelinetitle {
@@ -262,60 +634,6 @@ td {
     text-align: left;
     padding: 1vw;
     font-size: 1.2vw;
-}
-
-#event1, #event2, #event3, #event4, #event5, #event6, #event7, #event8, #event9, #event10 {
-    color: black;
-}
-
-#date1:hover + #event1 {
-    color: #66b7a9;
-    font-weight: 800;
-}
-
-#date2:hover + #event2 {
-    color: #66b7a9;
-    font-weight: 800;
-}
-
-#date3:hover + #event3 {
-    color: #66b7a9;
-    font-weight: 800;
-}
-
-#date4:hover + #event4 {
-    color: #66b7a9;
-    font-weight: 800;
-}
-
-#date5:hover + #event5 {
-    color: #66b7a9;
-    font-weight: 800;
-}
-
-#date6:hover + #event6 {
-    color: #66b7a9;
-    font-weight: 800;
-}
-
-#date7:hover + #event7 {
-    color: #66b7a9;
-    font-weight: 800;
-}
-
-#date8:hover + #event8 {
-    color: #66b7a9;
-    font-weight: 800;
-}
-
-#date9:hover + #event9 {
-    color: #66b7a9;
-    font-weight: 800;
-}
-
-#date10:hover + #event10 {
-    color: #66b7a9;
-    font-weight: 800;
 }
 /*End of Timeline*/
 
@@ -577,4 +895,8 @@ details > p {
 #courtesy {
     font-size: 0.8vw;
     text-align: center;
+}
+
+#bottomnavbar{
+    transform: translateY(100vw);
 }

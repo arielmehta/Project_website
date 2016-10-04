@@ -1,5 +1,61 @@
+html {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    border: 0;
+    left: 0;
+}
+.parallax { 
+    /* The image used */
+    background-image: url("Images/nicer.jpg");
+    opacity: 0.7;
+    /* Set a specific height */
+    height: 60vw !important;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallaxf { 
+    /* The image used */
+    background-image: url("Images/nicer.jpg");
+    opacity: 0.7;
+    /* Set a specific height */
+    height: 80vw !important;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 { 
+    /* The image used */
+    background-image: url("Images/nicer.jpg");
+    opacity: 0.7;
+    /* Set a specific height */
+    height: 5vw !important; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div {
+    display: block;
+}
+
 .navbar {
     list-style-type: none;
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -8,9 +64,6 @@
 
 li a {
     float: left;
-}
-
-li a {
     display: block;
     font-size: 1.4vw;
     color: white;
@@ -21,64 +74,168 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
+@media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        #menuicon {
+            width: 11vw;
+            height: 11vw;
+        }
+        
+        #menu {
+            font-size: 6.3vw !important;
+            padding: 3vw !important;
+            width: 55vw !important;
+            background:rgba(1,1,1,0.7) !important;
+        }
+        
+        #menubox {
+            margin-top: 11vw !important;
+            width: 55vw !important;
+        }
+        
+        #menucontainer {
+            width: 55vw !important;
+        }
+}
+
+#menuicon {
+    float: right;
+    padding: 1vw;
+    width: 5vw;
+    height: 5vw;
+    z-index: 5;
+}
+
+#menucontainer {
+    position: absolute;
+    text-align: right;
+    width: 13vw;
+    z-index: 5;
+    height: auto;
+    right: 0;
+}
+
+#menuicon:hover {
+    opacity: 0.5;
+}
+
+#menubox {
+    z-index: 4;
+    width: 13vw;;
+    margin-top: 5vw;
+    height: auto;
+}
+
+#menu {
+    background:rgba(1,1,1,0.5);
+    color: white;
+    padding: 0.8vw;
+    padding-right: 1.2vw;
+    margin: 0;
+    width: 13vw;
+    font-size: 1.2vw;
+    display: block;
+}
+
+#menu:hover {
+    background: rgba(1,1,1,0.7) !important;
+}
+
 li a:hover {
     background-color: #111;
 }
+
 .navigation{
-    margin-top: 0px;
+    position: absolute;
+    left: 0;
+    width: 100%;
     font-family: Abel;
+    z-index: 2;
 }
 
-#bottomnavbar{
-    margin-top: 50px;
+#topnav {
+    top: 0;
+}
+
+#bottomnavbar {
+    position: relative;
+    height: 3.7vw;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 body {
-    margin: 0px;
+    min-height: 100%;
+    height: 100%;
     font-family: 'Abel', sans-serif;
+    margin: 0;
+}
+
+.grass {
+    position: relative;
+    width: 100%;
+    border: 0;
 }
 
 .title {
     text-align: center;
     font-size: 7vw;
+    width: 30vw;
     color: white;
-    position: absolute;
     z-index: 2;
-    transform: translateX(36.75vw) translateY(-29.5vw);
+    margin-top: 4.5vw !important;
 }
 
-.grass {
-    width: 100%;
+#titletext {
     position: relative;
-    top: 0;
-    left: 0;
-    clear: both;
     background-size: cover;
-    z-index: -1;
-    margin: 0px;
-    border: 0px;
+    width: 100%;
+    height: 30vw;
+    opacity: 1;
+    font-weight: 900;
+    font-family: 'Abel', sans-serif;
+}
+
+#realtitletext {
+    vertical-align: middle;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    padding-top: 4vw;
+    height: 26vw;
+}
+
+#logo{
+    width: 20vw;
+    vertical-align: middle;
+    opacity: 0.85;
+    position: relative;
+    float: left;
 }
 
 .headers {
-    position: absolute;
-    top: 100%;
-    left: 50%;
+    position: relative;
     width: 100%;
-    transform: translate(-50%);
 }
 
 #VCScontainer {
-    background-color: white;
+    background-color: black;
+    opacity: 0.7;
+    position: relative;
     width: 100%;
-    padding-bottom: 10vw;
-    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-top: 1vw;
     vertical-align: middle;
+    color: white;
 }
 
 #Vector {
     text-align: center;
     font-size: 3vw;
-    margin-bottom: 0;
+    margin-bottom: 1vw;
+    margin-top: 4vw;
 }
 
 #Alameda {
@@ -93,6 +250,11 @@ body {
     font-size: 1.5vw;
 }
 
+#buttonbox {
+    width: 100%;
+    text-align: center;
+}
+
 #VCbutton {
     font-family: 'Abel', sans-serif;
     text-decoration: none;
@@ -104,7 +266,7 @@ body {
     text-align: center;
     display: inline-block;
     border-radius: 1vw;
-    transform: translateX(9vw) translateY(2vw);
+    z-index: 3;
 }
 
 #VCbutton:hover {
@@ -112,11 +274,13 @@ body {
 }
 
 #MSNcontainer {
-    background: #c6ece8;
+    display: table;
+    position: relative;
+    background: black;
+    color: white;
+    opacity: 0.9;
     width: 100%;
     height: 47vw;
-    padding-bottom: 5vw;
-    padding-top: 5vw;
     border: 0;
 }
 
@@ -124,6 +288,7 @@ body {
     width: 50%;
     transform: translateY(30%);
     vertical-align: middle;
+    position: absolute;
 }
 
 #MSN {
@@ -149,6 +314,7 @@ body {
     text-decoration: none;
     font-size: 1.5vw;
     border: none;
+    width: 23vw;
     color: black;
     padding: 1vw;
     transform: translateX(12vw) translateY(1vw);
@@ -159,14 +325,18 @@ body {
 }
 
 #MSNbutton:hover {
-    background-color: #63cbc0;
+    opacity: 0.7;
 }
 
 #Bluefordcontainer {
-    background-color: #9cded7;
+    display: table-cell;
+    background-color: gray;
     width: 35%;
-    height: 57vw;
-    transform: translate(160%) translateY(-57vw);
+    opacity: 0.9;
+    height: 59vw;
+    position: relative;
+    float: right;
+    margin-right: 9vw;
 }
 
 #bluefordpic {
@@ -189,51 +359,58 @@ body {
 }
 
 #teamcontainer {
-    background-color: transparent;
+    float: left;
+    position: relative;
+    background-color: black;
+    opacity: 0.9;
     width: 100%;
-    margin: 0;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-    border: 0;
-    transform: translateY(-57vw);
+    margin-top:0vw;
 }
 
 #teamheading {
+    margin-top: 0vw;
     text-align: center;
     font-size: 3vw;
 }
 
 table {
-    width: 80%;
-    transform: translate(10%);
+    width: 80% !important;
+    height: 70vw;
+    margin: auto;
+
+}
+
+td {
+    text-align: center;
+    vertical-align: top;
+    padding: 0.8vw;
 }
 
 #name {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
+    color: whitesmoke;
     margin: 0;
 }
 
 #school {
-    font-size: 1vw;
+    font-size: 1.1vw;
     margin: 0;
     font-style: normal;
+    margin-bottom: 0;
+    color: white;
 }
 
 #phoebepic {
-    width: 20vw;
-    height: 20vw;
-    border-radius: 100px
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+    margin: auto;
 }
 
-#contactcontainer {
-    background-color: white;
-    width: 100%;
-    padding-bottom: 10vw;
-    padding-top: 5vw;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#contactheading {
-    font-size: 3vw;
+#role {
+    font-size: 1.3vw;
+    margin-top: 0;
+    color: whitesmoke;
+    margin-bottom: 0;
+    
 }
